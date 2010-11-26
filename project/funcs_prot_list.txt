@@ -1,0 +1,3587 @@
+// extern void ( * glXGetProcAddressARB (const GLubyte *procName)) (void);
+luaglew_glXGetProcAddressARB(lua_State *L) {
+	glXGetProcAddressARB(**********CHYBA POINTER (const GLubyte *procName) NEBINDOVAT************);
+	return 0;
+}
+// void glXBindTexImageATI (Display *dpy, GLXPbuffer pbuf, int buffer)
+luaglew_glXBindTexImageATI(lua_State *L) {
+	glXBindTexImageATI(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXPbuffer pbuf) NEBINDOVAT************, luaL_checkint(L, 3));
+	return 0;
+}
+// void glXReleaseTexImageATI (Display *dpy, GLXPbuffer pbuf, int buffer)
+luaglew_glXReleaseTexImageATI(lua_State *L) {
+	glXReleaseTexImageATI(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXPbuffer pbuf) NEBINDOVAT************, luaL_checkint(L, 3));
+	return 0;
+}
+// void glXDrawableAttribATI (Display *dpy, GLXDrawable draw, const int *attrib_list)
+luaglew_glXDrawableAttribATI(lua_State *L) {
+	glXDrawableAttribATI(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXDrawable draw) NEBINDOVAT************, **********CHYBA POINTER (const int *attrib_list) NEBINDOVAT************);
+	return 0;
+}
+// void * glXAllocateMemoryNV (GLsizei size, GLfloat readFrequency, GLfloat writeFrequency, GLfloat priority)
+luaglew_glXAllocateMemoryNV(lua_State *L) {
+	glXAllocateMemoryNV(luaL_checklong(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glXFreeMemoryNV (void *pointer)
+luaglew_glXFreeMemoryNV(lua_State *L) {
+	glXFreeMemoryNV(**********CHYBA POINTER (void *pointer) NEBINDOVAT************);
+	return 0;
+}
+// GLXHyperpipeNetworkSGIX * glXQueryHyperpipeNetworkSGIX (Display *dpy, int *npipes)
+luaglew_glXQueryHyperpipeNetworkSGIX(lua_State *L) {
+	glXQueryHyperpipeNetworkSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA POINTER (int *npipes) NEBINDOVAT************);
+	return 0;
+}
+// int glXHyperpipeConfigSGIX (Display *dpy, int networkId, int npipes, GLXHyperpipeConfigSGIX *cfg, int *hpId)
+luaglew_glXHyperpipeConfigSGIX(lua_State *L) {
+	glXHyperpipeConfigSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), luaL_checkint(L, 3), **********CHYBA POINTER (GLXHyperpipeConfigSGIX *cfg) NEBINDOVAT************, **********CHYBA POINTER (int *hpId) NEBINDOVAT************);
+	return 0;
+}
+// GLXHyperpipeConfigSGIX * glXQueryHyperpipeConfigSGIX (Display *dpy, int hpId, int *npipes)
+luaglew_glXQueryHyperpipeConfigSGIX(lua_State *L) {
+	glXQueryHyperpipeConfigSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), **********CHYBA POINTER (int *npipes) NEBINDOVAT************);
+	return 0;
+}
+// int glXDestroyHyperpipeConfigSGIX (Display *dpy, int hpId)
+luaglew_glXDestroyHyperpipeConfigSGIX(lua_State *L) {
+	glXDestroyHyperpipeConfigSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2));
+	return 0;
+}
+// int glXBindHyperpipeSGIX (Display *dpy, int hpId)
+luaglew_glXBindHyperpipeSGIX(lua_State *L) {
+	glXBindHyperpipeSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2));
+	return 0;
+}
+// int glXQueryHyperpipeBestAttribSGIX (Display *dpy, int timeSlice, int attrib, int size, void *attribList, void *returnAttribList)
+luaglew_glXQueryHyperpipeBestAttribSGIX(lua_State *L) {
+	glXQueryHyperpipeBestAttribSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), **********CHYBA POINTER (void *attribList) NEBINDOVAT************, **********CHYBA POINTER (void *returnAttribList) NEBINDOVAT************);
+	return 0;
+}
+// int glXHyperpipeAttribSGIX (Display *dpy, int timeSlice, int attrib, int size, void *attribList)
+luaglew_glXHyperpipeAttribSGIX(lua_State *L) {
+	glXHyperpipeAttribSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), **********CHYBA POINTER (void *attribList) NEBINDOVAT************);
+	return 0;
+}
+// int glXQueryHyperpipeAttribSGIX (Display *dpy, int timeSlice, int attrib, int size, void *returnAttribList)
+luaglew_glXQueryHyperpipeAttribSGIX(lua_State *L) {
+	glXQueryHyperpipeAttribSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), **********CHYBA POINTER (void *returnAttribList) NEBINDOVAT************);
+	return 0;
+}
+// void glXBindSwapBarrierSGIX (Display *dpy, GLXDrawable drawable, int barrier)
+luaglew_glXBindSwapBarrierSGIX(lua_State *L) {
+	glXBindSwapBarrierSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXDrawable drawable) NEBINDOVAT************, luaL_checkint(L, 3));
+	return 0;
+}
+// Bool glXQueryMaxSwapBarriersSGIX (Display *dpy, int screen, int *max)
+luaglew_glXQueryMaxSwapBarriersSGIX(lua_State *L) {
+	glXQueryMaxSwapBarriersSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), **********CHYBA POINTER (int *max) NEBINDOVAT************);
+	return 0;
+}
+// void glXJoinSwapGroupSGIX (Display *dpy, GLXDrawable drawable, GLXDrawable member)
+luaglew_glXJoinSwapGroupSGIX(lua_State *L) {
+	glXJoinSwapGroupSGIX(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXDrawable drawable) NEBINDOVAT************, **********CHYBA (GLXDrawable member) NEBINDOVAT************);
+	return 0;
+}
+// int glXGetVideoSyncSGI (unsigned int* count)
+luaglew_glXGetVideoSyncSGI(lua_State *L) {
+	glXGetVideoSyncSGI(**********CHYBA POINTER (unsigned int* count) NEBINDOVAT************);
+	return 0;
+}
+// int glXWaitVideoSyncSGI (int divisor, int remainder, unsigned int* count)
+luaglew_glXWaitVideoSyncSGI(lua_State *L) {
+	glXWaitVideoSyncSGI(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (unsigned int* count) NEBINDOVAT************);
+	return 0;
+}
+// int glXVideoResizeSUN (Display* display, GLXDrawable window, float factor)
+luaglew_glXVideoResizeSUN(lua_State *L) {
+	glXVideoResizeSUN(**********CHYBA POINTER (Display* display) NEBINDOVAT************, **********CHYBA (GLXDrawable window) NEBINDOVAT************, (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// int glXGetVideoResizeSUN (Display* display, GLXDrawable window, float* factor)
+luaglew_glXGetVideoResizeSUN(lua_State *L) {
+	glXGetVideoResizeSUN(**********CHYBA POINTER (Display* display) NEBINDOVAT************, **********CHYBA (GLXDrawable window) NEBINDOVAT************, **********CHYBA POINTER (float* factor) NEBINDOVAT************);
+	return 0;
+}
+// Display* glXGetCurrentDisplay (void)
+luaglew_glXGetCurrentDisplay(lua_State *L) {
+	glXGetCurrentDisplay(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// GLXFBConfig* glXChooseFBConfig (Display *dpy, int screen, const int *attrib_list, int *nelements)
+luaglew_glXChooseFBConfig(lua_State *L) {
+	glXChooseFBConfig(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), **********CHYBA POINTER (const int *attrib_list) NEBINDOVAT************, **********CHYBA POINTER (int *nelements) NEBINDOVAT************);
+	return 0;
+}
+// GLXFBConfig* glXGetFBConfigs (Display *dpy, int screen, int *nelements)
+luaglew_glXGetFBConfigs(lua_State *L) {
+	glXGetFBConfigs(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, luaL_checkint(L, 2), **********CHYBA POINTER (int *nelements) NEBINDOVAT************);
+	return 0;
+}
+// XVisualInfo* glXGetVisualFromFBConfig (Display *dpy, GLXFBConfig config)
+luaglew_glXGetVisualFromFBConfig(lua_State *L) {
+	glXGetVisualFromFBConfig(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXFBConfig config) NEBINDOVAT************);
+	return 0;
+}
+// int glXGetFBConfigAttrib (Display *dpy, GLXFBConfig config, int attribute, int *value)
+luaglew_glXGetFBConfigAttrib(lua_State *L) {
+	glXGetFBConfigAttrib(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXFBConfig config) NEBINDOVAT************, luaL_checkint(L, 3), **********CHYBA POINTER (int *value) NEBINDOVAT************);
+	return 0;
+}
+// GLXWindow glXCreateWindow (Display *dpy, GLXFBConfig config, Window win, const int *attrib_list)
+luaglew_glXCreateWindow(lua_State *L) {
+	glXCreateWindow(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXFBConfig config) NEBINDOVAT************, **********CHYBA (Window win) NEBINDOVAT************, **********CHYBA POINTER (const int *attrib_list) NEBINDOVAT************);
+	return 0;
+}
+// void glXDestroyWindow (Display *dpy, GLXWindow win)
+luaglew_glXDestroyWindow(lua_State *L) {
+	glXDestroyWindow(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXWindow win) NEBINDOVAT************);
+	return 0;
+}
+// GLXPixmap glXCreatePixmap (Display *dpy, GLXFBConfig config, Pixmap pixmap, const int *attrib_list)
+luaglew_glXCreatePixmap(lua_State *L) {
+	glXCreatePixmap(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXFBConfig config) NEBINDOVAT************, **********CHYBA (Pixmap pixmap) NEBINDOVAT************, **********CHYBA POINTER (const int *attrib_list) NEBINDOVAT************);
+	return 0;
+}
+// void glXDestroyPixmap (Display *dpy, GLXPixmap pixmap)
+luaglew_glXDestroyPixmap(lua_State *L) {
+	glXDestroyPixmap(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXPixmap pixmap) NEBINDOVAT************);
+	return 0;
+}
+// GLXPbuffer glXCreatePbuffer (Display *dpy, GLXFBConfig config, const int *attrib_list)
+luaglew_glXCreatePbuffer(lua_State *L) {
+	glXCreatePbuffer(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXFBConfig config) NEBINDOVAT************, **********CHYBA POINTER (const int *attrib_list) NEBINDOVAT************);
+	return 0;
+}
+// void glXDestroyPbuffer (Display *dpy, GLXPbuffer pbuf)
+luaglew_glXDestroyPbuffer(lua_State *L) {
+	glXDestroyPbuffer(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXPbuffer pbuf) NEBINDOVAT************);
+	return 0;
+}
+// void glXQueryDrawable (Display *dpy, GLXDrawable draw, int attribute, unsigned int *value)
+luaglew_glXQueryDrawable(lua_State *L) {
+	glXQueryDrawable(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXDrawable draw) NEBINDOVAT************, luaL_checkint(L, 3), **********CHYBA POINTER (unsigned int *value) NEBINDOVAT************);
+	return 0;
+}
+// GLXContext glXCreateNewContext (Display *dpy, GLXFBConfig config, int render_type, GLXContext share_list, Bool direct)
+luaglew_glXCreateNewContext(lua_State *L) {
+	glXCreateNewContext(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXFBConfig config) NEBINDOVAT************, luaL_checkint(L, 3), **********CHYBA (GLXContext share_list) NEBINDOVAT************, **********CHYBA (Bool direct) NEBINDOVAT************);
+	return 0;
+}
+// Bool glXMakeContextCurrent (Display *display, GLXDrawable draw, GLXDrawable read, GLXContext ctx)
+luaglew_glXMakeContextCurrent(lua_State *L) {
+	glXMakeContextCurrent(**********CHYBA POINTER (Display *display) NEBINDOVAT************, **********CHYBA (GLXDrawable draw) NEBINDOVAT************, **********CHYBA (GLXDrawable read) NEBINDOVAT************, **********CHYBA (GLXContext ctx) NEBINDOVAT************);
+	return 0;
+}
+// GLXDrawable glXGetCurrentReadDrawable (void)
+luaglew_glXGetCurrentReadDrawable(lua_State *L) {
+	glXGetCurrentReadDrawable(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// int glXQueryContext (Display *dpy, GLXContext ctx, int attribute, int *value)
+luaglew_glXQueryContext(lua_State *L) {
+	glXQueryContext(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXContext ctx) NEBINDOVAT************, luaL_checkint(L, 3), **********CHYBA POINTER (int *value) NEBINDOVAT************);
+	return 0;
+}
+// void glXSelectEvent (Display *dpy, GLXDrawable draw, unsigned long event_mask)
+luaglew_glXSelectEvent(lua_State *L) {
+	glXSelectEvent(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXDrawable draw) NEBINDOVAT************, **********CHYBA (unsigned long event_mask) NEBINDOVAT************);
+	return 0;
+}
+// void glXGetSelectedEvent (Display *dpy, GLXDrawable draw, unsigned long *event_mask)
+luaglew_glXGetSelectedEvent(lua_State *L) {
+	glXGetSelectedEvent(**********CHYBA POINTER (Display *dpy) NEBINDOVAT************, **********CHYBA (GLXDrawable draw) NEBINDOVAT************, **********CHYBA POINTER (unsigned long *event_mask) NEBINDOVAT************);
+	return 0;
+}
+// typedef union __GLXEvent { GLXPbufferClobberEvent glxpbufferclobber; long pad[24]; } GLXEvent;
+luaglew_glxpbufferclobber;(lua_State *L) {
+	glxpbufferclobber;(**********CHYBA () NEBINDOVAT************);
+	return 0;
+}
+// extern void ( * glXGetProcAddress (const GLubyte *procName)) (void);
+luaglew_glXGetProcAddress(lua_State *L) {
+	glXGetProcAddress(**********CHYBA POINTER (const GLubyte *procName) NEBINDOVAT************);
+	return 0;
+}
+// void glTextureRangeAPPLE (GLenum target, GLsizei length, GLvoid *pointer)
+luaglew_glTextureRangeAPPLE(lua_State *L) {
+	glTextureRangeAPPLE(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTexParameterPointervAPPLE (GLenum target, GLenum pname, GLvoid **params)
+luaglew_glGetTexParameterPointervAPPLE(lua_State *L) {
+	glGetTexParameterPointervAPPLE(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLvoid **params) NEBINDOVAT************);
+	return 0;
+}
+// void glColorTable (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *table)
+luaglew_glColorTable(lua_State *L) {
+	glColorTable(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaglew_enum(L, 4), luaglew_enum(L, 5), **********CHYBA POINTER (const GLvoid *table) NEBINDOVAT************);
+	return 0;
+}
+// void glColorSubTable (GLenum target, GLsizei start, GLsizei count, GLenum format, GLenum type, const GLvoid *data)
+luaglew_glColorSubTable(lua_State *L) {
+	glColorSubTable(luaglew_enum(L, 1), luaL_checklong(L, 2), luaL_checklong(L, 3), luaglew_enum(L, 4), luaglew_enum(L, 5), **********CHYBA POINTER (const GLvoid *data) NEBINDOVAT************);
+	return 0;
+}
+// void glColorTableParameteriv (GLenum target, GLenum pname, const GLint *params)
+luaglew_glColorTableParameteriv(lua_State *L) {
+	glColorTableParameteriv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glColorTableParameterfv (GLenum target, GLenum pname, const GLfloat *params)
+luaglew_glColorTableParameterfv(lua_State *L) {
+	glColorTableParameterfv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glCopyColorSubTable (GLenum target, GLsizei start, GLint x, GLint y, GLsizei width)
+luaglew_glCopyColorSubTable(lua_State *L) {
+	glCopyColorSubTable(luaglew_enum(L, 1), luaL_checklong(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checklong(L, 5)
+
+// void glCopyColorTable (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width)
+luaglew_glCopyColorTable(lua_State *L) {
+	glCopyColorTable(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checklong(L, 5)
+
+// void glGetColorTable (GLenum target, GLenum format, GLenum type, GLvoid *table)
+luaglew_glGetColorTable(lua_State *L) {
+	glGetColorTable(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), **********CHYBA POINTER (GLvoid *table) NEBINDOVAT************);
+	return 0;
+}
+// void glGetColorTableParameterfv (GLenum target, GLenum pname, GLfloat *params)
+luaglew_glGetColorTableParameterfv(lua_State *L) {
+	glGetColorTableParameterfv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetColorTableParameteriv (GLenum target, GLenum pname, GLint *params)
+luaglew_glGetColorTableParameteriv(lua_State *L) {
+	glGetColorTableParameteriv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glHistogram (GLenum target, GLsizei width, GLenum internalformat, GLboolean sink)
+luaglew_glHistogram(lua_State *L) {
+	glHistogram(luaglew_enum(L, 1), luaL_checklong(L, 2), luaL_checkint(L, 3), **********CHYBA (GLboolean sink) NEBINDOVAT************);
+	return 0;
+}
+// void glResetHistogram (GLenum target)
+luaglew_glResetHistogram(lua_State *L) {
+	glResetHistogram(luaglew_enum(L, 1));
+	return 0;
+}
+// void glGetHistogram (GLenum target, GLboolean reset, GLenum format, GLenum type, GLvoid *values)
+luaglew_glGetHistogram(lua_State *L) {
+	glGetHistogram(luaglew_enum(L, 1), **********CHYBA (GLboolean reset) NEBINDOVAT************, luaglew_enum(L, 3), luaglew_enum(L, 4), **********CHYBA POINTER (GLvoid *values) NEBINDOVAT************);
+	return 0;
+}
+// void glGetHistogramParameterfv (GLenum target, GLenum pname, GLfloat *params)
+luaglew_glGetHistogramParameterfv(lua_State *L) {
+	glGetHistogramParameterfv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetHistogramParameteriv (GLenum target, GLenum pname, GLint *params)
+luaglew_glGetHistogramParameteriv(lua_State *L) {
+	glGetHistogramParameteriv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glMinmax (GLenum target, GLenum internalformat, GLboolean sink)
+luaglew_glMinmax(lua_State *L) {
+	glMinmax(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA (GLboolean sink) NEBINDOVAT************);
+	return 0;
+}
+// void glResetMinmax (GLenum target)
+luaglew_glResetMinmax(lua_State *L) {
+	glResetMinmax(luaglew_enum(L, 1));
+	return 0;
+}
+// void glGetMinmaxParameterfv (GLenum target, GLenum pname, GLfloat *params)
+luaglew_glGetMinmaxParameterfv(lua_State *L) {
+	glGetMinmaxParameterfv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetMinmaxParameteriv (GLenum target, GLenum pname, GLint *params)
+luaglew_glGetMinmaxParameteriv(lua_State *L) {
+	glGetMinmaxParameteriv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glConvolutionFilter1D (GLenum target, GLenum internalformat, GLsizei width, GLenum format, GLenum type, const GLvoid *image)
+luaglew_glConvolutionFilter1D(lua_State *L) {
+	glConvolutionFilter1D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaglew_enum(L, 4), luaglew_enum(L, 5), **********CHYBA POINTER (const GLvoid *image) NEBINDOVAT************);
+	return 0;
+}
+// void glConvolutionFilter2D (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *image)
+luaglew_glConvolutionFilter2D(lua_State *L) {
+	glConvolutionFilter2D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaL_checklong(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6), **********CHYBA POINTER (const GLvoid *image) NEBINDOVAT************);
+	return 0;
+}
+// void glConvolutionParameterf (GLenum target, GLenum pname, GLfloat params)
+luaglew_glConvolutionParameterf(lua_State *L) {
+	glConvolutionParameterf(luaglew_enum(L, 1), luaglew_enum(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glConvolutionParameterfv (GLenum target, GLenum pname, const GLfloat *params)
+luaglew_glConvolutionParameterfv(lua_State *L) {
+	glConvolutionParameterfv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glConvolutionParameteri (GLenum target, GLenum pname, GLint params)
+luaglew_glConvolutionParameteri(lua_State *L) {
+	glConvolutionParameteri(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glConvolutionParameteriv (GLenum target, GLenum pname, const GLint *params)
+luaglew_glConvolutionParameteriv(lua_State *L) {
+	glConvolutionParameteriv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glCopyConvolutionFilter1D (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width)
+luaglew_glCopyConvolutionFilter1D(lua_State *L) {
+	glCopyConvolutionFilter1D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checklong(L, 5)
+
+// void glCopyConvolutionFilter2D (GLenum target, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height)
+luaglew_glCopyConvolutionFilter2D(lua_State *L) {
+	glCopyConvolutionFilter2D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checklong(L, 5), luaL_checklong(L, 6)
+
+// void glGetConvolutionFilter (GLenum target, GLenum format, GLenum type, GLvoid *image)
+luaglew_glGetConvolutionFilter(lua_State *L) {
+	glGetConvolutionFilter(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), **********CHYBA POINTER (GLvoid *image) NEBINDOVAT************);
+	return 0;
+}
+// void glGetConvolutionParameterfv (GLenum target, GLenum pname, GLfloat *params)
+luaglew_glGetConvolutionParameterfv(lua_State *L) {
+	glGetConvolutionParameterfv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetConvolutionParameteriv (GLenum target, GLenum pname, GLint *params)
+luaglew_glGetConvolutionParameteriv(lua_State *L) {
+	glGetConvolutionParameteriv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glSeparableFilter2D (GLenum target, GLenum internalformat, GLsizei width, GLsizei height, GLenum format, GLenum type, const GLvoid *row, const GLvoid *column)
+luaglew_glSeparableFilter2D(lua_State *L) {
+	glSeparableFilter2D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaL_checklong(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6), **********CHYBA POINTER (const GLvoid *row) NEBINDOVAT************, **********CHYBA POINTER (const GLvoid *column) NEBINDOVAT************);
+	return 0;
+}
+// void glGetSeparableFilter (GLenum target, GLenum format, GLenum type, GLvoid *row, GLvoid *column, GLvoid *span)
+luaglew_glGetSeparableFilter(lua_State *L) {
+	glGetSeparableFilter(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), **********CHYBA POINTER (GLvoid *row) NEBINDOVAT************, **********CHYBA POINTER (GLvoid *column) NEBINDOVAT************, **********CHYBA POINTER (GLvoid *span) NEBINDOVAT************);
+	return 0;
+}
+// void glGetMinmax (GLenum target, GLboolean reset, GLenum format, GLenum types, GLvoid *values)
+luaglew_glGetMinmax(lua_State *L) {
+	glGetMinmax(luaglew_enum(L, 1), **********CHYBA (GLboolean reset) NEBINDOVAT************, luaglew_enum(L, 3), luaglew_enum(L, 4), **********CHYBA POINTER (GLvoid *values) NEBINDOVAT************);
+	return 0;
+}
+// void glCurrentPaletteMatrixARB (GLint index)
+luaglew_glCurrentPaletteMatrixARB(lua_State *L) {
+	glCurrentPaletteMatrixARB(luaL_checkint(L, 1));
+	return 0;
+}
+// void glMatrixIndexPointerARB (GLint size, GLenum type, GLsizei stride, GLvoid *pointer)
+luaglew_glMatrixIndexPointerARB(lua_State *L) {
+	glMatrixIndexPointerARB(luaL_checkint(L, 1), luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glMatrixIndexubvARB (GLint size, GLubyte *indices)
+luaglew_glMatrixIndexubvARB(lua_State *L) {
+	glMatrixIndexubvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLubyte *indices) NEBINDOVAT************);
+	return 0;
+}
+// void glMatrixIndexusvARB (GLint size, GLushort *indices)
+luaglew_glMatrixIndexusvARB(lua_State *L) {
+	glMatrixIndexusvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLushort *indices) NEBINDOVAT************);
+	return 0;
+}
+// void glMatrixIndexuivARB (GLint size, GLuint *indices)
+luaglew_glMatrixIndexuivARB(lua_State *L) {
+	glMatrixIndexuivARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLuint *indices) NEBINDOVAT************);
+	return 0;
+}
+// void glActiveTextureARB (GLenum texture)
+luaglew_glActiveTextureARB(lua_State *L) {
+	glActiveTextureARB(luaglew_enum(L, 1));
+	return 0;
+}
+// void glClientActiveTextureARB (GLenum texture)
+luaglew_glClientActiveTextureARB(lua_State *L) {
+	glClientActiveTextureARB(luaglew_enum(L, 1));
+	return 0;
+}
+// void glMultiTexCoord1dARB (GLenum target, GLdouble s)
+luaglew_glMultiTexCoord1dARB(lua_State *L) {
+	glMultiTexCoord1dARB(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1dvARB (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord1dvARB(lua_State *L) {
+	glMultiTexCoord1dvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord1fARB (GLenum target, GLfloat s)
+luaglew_glMultiTexCoord1fARB(lua_State *L) {
+	glMultiTexCoord1fARB(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1fvARB (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord1fvARB(lua_State *L) {
+	glMultiTexCoord1fvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord1iARB (GLenum target, GLint s)
+luaglew_glMultiTexCoord1iARB(lua_State *L) {
+	glMultiTexCoord1iARB(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1ivARB (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord1ivARB(lua_State *L) {
+	glMultiTexCoord1ivARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord1sARB (GLenum target, GLshort s)
+luaglew_glMultiTexCoord1sARB(lua_State *L) {
+	glMultiTexCoord1sARB(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1svARB (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord1svARB(lua_State *L) {
+	glMultiTexCoord1svARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2dARB (GLenum target, GLdouble s, GLdouble t)
+luaglew_glMultiTexCoord2dARB(lua_State *L) {
+	glMultiTexCoord2dARB(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2dvARB (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord2dvARB(lua_State *L) {
+	glMultiTexCoord2dvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2fARB (GLenum target, GLfloat s, GLfloat t)
+luaglew_glMultiTexCoord2fARB(lua_State *L) {
+	glMultiTexCoord2fARB(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2fvARB (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord2fvARB(lua_State *L) {
+	glMultiTexCoord2fvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2iARB (GLenum target, GLint s, GLint t)
+luaglew_glMultiTexCoord2iARB(lua_State *L) {
+	glMultiTexCoord2iARB(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2ivARB (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord2ivARB(lua_State *L) {
+	glMultiTexCoord2ivARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2sARB (GLenum target, GLshort s, GLshort t)
+luaglew_glMultiTexCoord2sARB(lua_State *L) {
+	glMultiTexCoord2sARB(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2svARB (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord2svARB(lua_State *L) {
+	glMultiTexCoord2svARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3dARB (GLenum target, GLdouble s, GLdouble t, GLdouble r)
+luaglew_glMultiTexCoord3dARB(lua_State *L) {
+	glMultiTexCoord3dARB(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3dvARB (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord3dvARB(lua_State *L) {
+	glMultiTexCoord3dvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3fARB (GLenum target, GLfloat s, GLfloat t, GLfloat r)
+luaglew_glMultiTexCoord3fARB(lua_State *L) {
+	glMultiTexCoord3fARB(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3fvARB (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord3fvARB(lua_State *L) {
+	glMultiTexCoord3fvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3iARB (GLenum target, GLint s, GLint t, GLint r)
+luaglew_glMultiTexCoord3iARB(lua_State *L) {
+	glMultiTexCoord3iARB(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3ivARB (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord3ivARB(lua_State *L) {
+	glMultiTexCoord3ivARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3sARB (GLenum target, GLshort s, GLshort t, GLshort r)
+luaglew_glMultiTexCoord3sARB(lua_State *L) {
+	glMultiTexCoord3sARB(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3svARB (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord3svARB(lua_State *L) {
+	glMultiTexCoord3svARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4dARB (GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q)
+luaglew_glMultiTexCoord4dARB(lua_State *L) {
+	glMultiTexCoord4dARB(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4), (GLdouble)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4dvARB (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord4dvARB(lua_State *L) {
+	glMultiTexCoord4dvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4fARB (GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q)
+luaglew_glMultiTexCoord4fARB(lua_State *L) {
+	glMultiTexCoord4fARB(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4), (GLfloat)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4fvARB (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord4fvARB(lua_State *L) {
+	glMultiTexCoord4fvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4iARB (GLenum target, GLint s, GLint t, GLint r, GLint q)
+luaglew_glMultiTexCoord4iARB(lua_State *L) {
+	glMultiTexCoord4iARB(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4ivARB (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord4ivARB(lua_State *L) {
+	glMultiTexCoord4ivARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4sARB (GLenum target, GLshort s, GLshort t, GLshort r, GLshort q)
+luaglew_glMultiTexCoord4sARB(lua_State *L) {
+	glMultiTexCoord4sARB(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4), (GLshort)luaL_checkinteger(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4svARB (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord4svARB(lua_State *L) {
+	glMultiTexCoord4svARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glPointParameterfARB (GLenum pname, GLfloat param)
+luaglew_glPointParameterfARB(lua_State *L) {
+	glPointParameterfARB(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glPointParameterfvARB (GLenum pname, const GLfloat* params)
+luaglew_glPointParameterfvARB(lua_State *L) {
+	glPointParameterfvARB(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnColorTableARB (GLenum target, GLenum format, GLenum type, GLsizei bufSize, void* table)
+luaglew_glGetnColorTableARB(lua_State *L) {
+	glGetnColorTableARB(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (void* table) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnCompressedTexImageARB (GLenum target, GLint lod, GLsizei bufSize, void* img)
+luaglew_glGetnCompressedTexImageARB(lua_State *L) {
+	glGetnCompressedTexImageARB(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (void* img) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnConvolutionFilterARB (GLenum target, GLenum format, GLenum type, GLsizei bufSize, void* image)
+luaglew_glGetnConvolutionFilterARB(lua_State *L) {
+	glGetnConvolutionFilterARB(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (void* image) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnHistogramARB (GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void* values)
+luaglew_glGetnHistogramARB(lua_State *L) {
+	glGetnHistogramARB(luaglew_enum(L, 1), **********CHYBA (GLboolean reset) NEBINDOVAT************, luaglew_enum(L, 3), luaglew_enum(L, 4), luaL_checklong(L, 5), **********CHYBA POINTER (void* values) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnMapdvARB (GLenum target, GLenum query, GLsizei bufSize, GLdouble* v)
+luaglew_glGetnMapdvARB(lua_State *L) {
+	glGetnMapdvARB(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnMapfvARB (GLenum target, GLenum query, GLsizei bufSize, GLfloat* v)
+luaglew_glGetnMapfvARB(lua_State *L) {
+	glGetnMapfvARB(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLfloat* v) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnMapivARB (GLenum target, GLenum query, GLsizei bufSize, GLint* v)
+luaglew_glGetnMapivARB(lua_State *L) {
+	glGetnMapivARB(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLint* v) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnMinmaxARB (GLenum target, GLboolean reset, GLenum format, GLenum type, GLsizei bufSize, void* values)
+luaglew_glGetnMinmaxARB(lua_State *L) {
+	glGetnMinmaxARB(luaglew_enum(L, 1), **********CHYBA (GLboolean reset) NEBINDOVAT************, luaglew_enum(L, 3), luaglew_enum(L, 4), luaL_checklong(L, 5), **********CHYBA POINTER (void* values) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnPixelMapfvARB (GLenum map, GLsizei bufSize, GLfloat* values)
+luaglew_glGetnPixelMapfvARB(lua_State *L) {
+	glGetnPixelMapfvARB(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLfloat* values) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnPixelMapuivARB (GLenum map, GLsizei bufSize, GLuint* values)
+luaglew_glGetnPixelMapuivARB(lua_State *L) {
+	glGetnPixelMapuivARB(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLuint* values) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnPixelMapusvARB (GLenum map, GLsizei bufSize, GLushort* values)
+luaglew_glGetnPixelMapusvARB(lua_State *L) {
+	glGetnPixelMapusvARB(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLushort* values) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnPolygonStippleARB (GLsizei bufSize, GLubyte* pattern)
+luaglew_glGetnPolygonStippleARB(lua_State *L) {
+	glGetnPolygonStippleARB(luaL_checklong(L, 1), **********CHYBA POINTER (GLubyte* pattern) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnSeparableFilterARB (GLenum target, GLenum format, GLenum type, GLsizei rowBufSize, void* row, GLsizei columnBufSize, GLvoid*column, GLvoid*span)
+luaglew_glGetnSeparableFilterARB(lua_State *L) {
+	glGetnSeparableFilterARB(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (void* row) NEBINDOVAT************, luaL_checklong(L, 6), **********CHYBA POINTER (GLvoid*column) NEBINDOVAT************, **********CHYBA POINTER (GLvoid*span) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnTexImageARB (GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void* img)
+luaglew_glGetnTexImageARB(lua_State *L) {
+	glGetnTexImageARB(luaglew_enum(L, 1), luaL_checkint(L, 2), luaglew_enum(L, 3), luaglew_enum(L, 4), luaL_checklong(L, 5), **********CHYBA POINTER (void* img) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnUniformdvARB (GLuint program, GLint location, GLsizei bufSize, GLdouble* params)
+luaglew_glGetnUniformdvARB(lua_State *L) {
+	glGetnUniformdvARB(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLdouble* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnUniformfvARB (GLuint program, GLint location, GLsizei bufSize, GLfloat* params)
+luaglew_glGetnUniformfvARB(lua_State *L) {
+	glGetnUniformfvARB(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLfloat* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnUniformivARB (GLuint program, GLint location, GLsizei bufSize, GLint* params)
+luaglew_glGetnUniformivARB(lua_State *L) {
+	glGetnUniformivARB(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetnUniformuivARB (GLuint program, GLint location, GLsizei bufSize, GLuint* params)
+luaglew_glGetnUniformuivARB(lua_State *L) {
+	glGetnUniformuivARB(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLuint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glReadnPixelsARB (GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void* data)
+luaglew_glReadnPixelsARB(lua_State *L) {
+	glReadnPixelsARB(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaL_checklong(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6), luaL_checklong(L, 7), **********CHYBA POINTER (void* data) NEBINDOVAT************);
+	return 0;
+}
+// void glActiveShaderProgram (GLuint pipeline, GLuint program)
+luaglew_glActiveShaderProgram(lua_State *L) {
+	glActiveShaderProgram(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glBindProgramPipeline (GLuint pipeline)
+luaglew_glBindProgramPipeline(lua_State *L) {
+	glBindProgramPipeline(luaL_checkint(L, 1));
+	return 0;
+}
+// GLuint glCreateShaderProgramv (GLenum type, GLsizei count, const char ** strings)
+luaglew_glCreateShaderProgramv(lua_State *L) {
+	glCreateShaderProgramv(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const char ** strings) NEBINDOVAT************);
+	return 0;
+}
+// void glDeleteProgramPipelines (GLsizei n, const GLuint* pipelines)
+luaglew_glDeleteProgramPipelines(lua_State *L) {
+	glDeleteProgramPipelines(luaL_checklong(L, 1), **********CHYBA POINTER (const GLuint* pipelines) NEBINDOVAT************);
+	return 0;
+}
+// void glGenProgramPipelines (GLsizei n, GLuint* pipelines)
+luaglew_glGenProgramPipelines(lua_State *L) {
+	glGenProgramPipelines(luaL_checklong(L, 1), **********CHYBA POINTER (GLuint* pipelines) NEBINDOVAT************);
+	return 0;
+}
+// void glGetProgramPipelineInfoLog (GLuint pipeline, GLsizei bufSize, GLsizei* length, char *infoLog)
+luaglew_glGetProgramPipelineInfoLog(lua_State *L) {
+	glGetProgramPipelineInfoLog(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLsizei* length) NEBINDOVAT************, **********CHYBA POINTER (char *infoLog) NEBINDOVAT************);
+	return 0;
+}
+// void glGetProgramPipelineiv (GLuint pipeline, GLenum pname, GLint* params)
+luaglew_glGetProgramPipelineiv(lua_State *L) {
+	glGetProgramPipelineiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint* params) NEBINDOVAT************);
+	return 0;
+}
+// GLboolean glIsProgramPipeline (GLuint pipeline)
+luaglew_glIsProgramPipeline(lua_State *L) {
+	glIsProgramPipeline(luaL_checkint(L, 1));
+	return 0;
+}
+// void glProgramUniform1d (GLuint program, GLint location, GLdouble x)
+luaglew_glProgramUniform1d(lua_State *L) {
+	glProgramUniform1d(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glProgramUniform1dv (GLuint program, GLint location, GLsizei count, const GLdouble* value)
+luaglew_glProgramUniform1dv(lua_State *L) {
+	glProgramUniform1dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform1f (GLuint program, GLint location, GLfloat x)
+luaglew_glProgramUniform1f(lua_State *L) {
+	glProgramUniform1f(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glProgramUniform1fv (GLuint program, GLint location, GLsizei count, const GLfloat* value)
+luaglew_glProgramUniform1fv(lua_State *L) {
+	glProgramUniform1fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform1i (GLuint program, GLint location, GLint x)
+luaglew_glProgramUniform1i(lua_State *L) {
+	glProgramUniform1i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glProgramUniform1iv (GLuint program, GLint location, GLsizei count, const GLint* value)
+luaglew_glProgramUniform1iv(lua_State *L) {
+	glProgramUniform1iv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform1ui (GLuint program, GLint location, GLuint x)
+luaglew_glProgramUniform1ui(lua_State *L) {
+	glProgramUniform1ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glProgramUniform1uiv (GLuint program, GLint location, GLsizei count, const GLuint* value)
+luaglew_glProgramUniform1uiv(lua_State *L) {
+	glProgramUniform1uiv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform2d (GLuint program, GLint location, GLdouble x, GLdouble y)
+luaglew_glProgramUniform2d(lua_State *L) {
+	glProgramUniform2d(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glProgramUniform2dv (GLuint program, GLint location, GLsizei count, const GLdouble* value)
+luaglew_glProgramUniform2dv(lua_State *L) {
+	glProgramUniform2dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform2f (GLuint program, GLint location, GLfloat x, GLfloat y)
+luaglew_glProgramUniform2f(lua_State *L) {
+	glProgramUniform2f(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glProgramUniform2fv (GLuint program, GLint location, GLsizei count, const GLfloat* value)
+luaglew_glProgramUniform2fv(lua_State *L) {
+	glProgramUniform2fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform2i (GLuint program, GLint location, GLint x, GLint y)
+luaglew_glProgramUniform2i(lua_State *L) {
+	glProgramUniform2i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glProgramUniform2iv (GLuint program, GLint location, GLsizei count, const GLint* value)
+luaglew_glProgramUniform2iv(lua_State *L) {
+	glProgramUniform2iv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform2ui (GLuint program, GLint location, GLuint x, GLuint y)
+luaglew_glProgramUniform2ui(lua_State *L) {
+	glProgramUniform2ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glProgramUniform2uiv (GLuint program, GLint location, GLsizei count, const GLuint* value)
+luaglew_glProgramUniform2uiv(lua_State *L) {
+	glProgramUniform2uiv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform3d (GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z)
+luaglew_glProgramUniform3d(lua_State *L) {
+	glProgramUniform3d(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4), (GLdouble)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glProgramUniform3dv (GLuint program, GLint location, GLsizei count, const GLdouble* value)
+luaglew_glProgramUniform3dv(lua_State *L) {
+	glProgramUniform3dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform3f (GLuint program, GLint location, GLfloat x, GLfloat y, GLfloat z)
+luaglew_glProgramUniform3f(lua_State *L) {
+	glProgramUniform3f(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4), (GLfloat)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glProgramUniform3fv (GLuint program, GLint location, GLsizei count, const GLfloat* value)
+luaglew_glProgramUniform3fv(lua_State *L) {
+	glProgramUniform3fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform3i (GLuint program, GLint location, GLint x, GLint y, GLint z)
+luaglew_glProgramUniform3i(lua_State *L) {
+	glProgramUniform3i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glProgramUniform3iv (GLuint program, GLint location, GLsizei count, const GLint* value)
+luaglew_glProgramUniform3iv(lua_State *L) {
+	glProgramUniform3iv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform3ui (GLuint program, GLint location, GLuint x, GLuint y, GLuint z)
+luaglew_glProgramUniform3ui(lua_State *L) {
+	glProgramUniform3ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glProgramUniform3uiv (GLuint program, GLint location, GLsizei count, const GLuint* value)
+luaglew_glProgramUniform3uiv(lua_State *L) {
+	glProgramUniform3uiv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform4d (GLuint program, GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w)
+luaglew_glProgramUniform4d(lua_State *L) {
+	glProgramUniform4d(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4), (GLdouble)luaL_checknumber(L, 5), (GLdouble)luaL_checknumber(L, 6));
+	return 0;
+}
+// void glProgramUniform4dv (GLuint program, GLint location, GLsizei count, const GLdouble* value)
+luaglew_glProgramUniform4dv(lua_State *L) {
+	glProgramUniform4dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform4f (GLuint program, GLint location, GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+luaglew_glProgramUniform4f(lua_State *L) {
+	glProgramUniform4f(luaL_checkint(L, 1), luaL_checkint(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4), (GLfloat)luaL_checknumber(L, 5), (GLfloat)luaL_checknumber(L, 6));
+	return 0;
+}
+// void glProgramUniform4fv (GLuint program, GLint location, GLsizei count, const GLfloat* value)
+luaglew_glProgramUniform4fv(lua_State *L) {
+	glProgramUniform4fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform4i (GLuint program, GLint location, GLint x, GLint y, GLint z, GLint w)
+luaglew_glProgramUniform4i(lua_State *L) {
+	glProgramUniform4i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checkint(L, 6));
+	return 0;
+}
+// void glProgramUniform4iv (GLuint program, GLint location, GLsizei count, const GLint* value)
+luaglew_glProgramUniform4iv(lua_State *L) {
+	glProgramUniform4iv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniform4ui (GLuint program, GLint location, GLuint x, GLuint y, GLuint z, GLuint w)
+luaglew_glProgramUniform4ui(lua_State *L) {
+	glProgramUniform4ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checkint(L, 6));
+	return 0;
+}
+// void glProgramUniform4uiv (GLuint program, GLint location, GLsizei count, const GLuint* value)
+luaglew_glProgramUniform4uiv(lua_State *L) {
+	glProgramUniform4uiv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix2dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix2dv(lua_State *L) {
+	glProgramUniformMatrix2dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix2fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix2fv(lua_State *L) {
+	glProgramUniformMatrix2fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix2x3dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix2x3dv(lua_State *L) {
+	glProgramUniformMatrix2x3dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix2x3fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix2x3fv(lua_State *L) {
+	glProgramUniformMatrix2x3fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix2x4dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix2x4dv(lua_State *L) {
+	glProgramUniformMatrix2x4dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix2x4fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix2x4fv(lua_State *L) {
+	glProgramUniformMatrix2x4fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix3dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix3dv(lua_State *L) {
+	glProgramUniformMatrix3dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix3fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix3fv(lua_State *L) {
+	glProgramUniformMatrix3fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix3x2dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix3x2dv(lua_State *L) {
+	glProgramUniformMatrix3x2dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix3x2fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix3x2fv(lua_State *L) {
+	glProgramUniformMatrix3x2fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix3x4dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix3x4dv(lua_State *L) {
+	glProgramUniformMatrix3x4dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix3x4fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix3x4fv(lua_State *L) {
+	glProgramUniformMatrix3x4fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix4dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix4dv(lua_State *L) {
+	glProgramUniformMatrix4dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix4fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix4fv(lua_State *L) {
+	glProgramUniformMatrix4fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix4x2dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix4x2dv(lua_State *L) {
+	glProgramUniformMatrix4x2dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix4x2fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix4x2fv(lua_State *L) {
+	glProgramUniformMatrix4x2fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix4x3dv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble* value)
+luaglew_glProgramUniformMatrix4x3dv(lua_State *L) {
+	glProgramUniformMatrix4x3dv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLdouble* value) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramUniformMatrix4x3fv (GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glProgramUniformMatrix4x3fv(lua_State *L) {
+	glProgramUniformMatrix4x3fv(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUseProgramStages (GLuint pipeline, GLbitfield stages, GLuint program)
+luaglew_glUseProgramStages(lua_State *L) {
+	glUseProgramStages(luaL_checkint(L, 1), **********CHYBA (GLbitfield stages) NEBINDOVAT************, luaL_checkint(L, 3));
+	return 0;
+}
+// void glValidateProgramPipeline (GLuint pipeline)
+luaglew_glValidateProgramPipeline(lua_State *L) {
+	glValidateProgramPipeline(luaL_checkint(L, 1));
+	return 0;
+}
+// void glGetVertexAttribLdv (GLuint index, GLenum pname, GLdouble* params)
+luaglew_glGetVertexAttribLdv(lua_State *L) {
+	glGetVertexAttribLdv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLdouble* params) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribL1d (GLuint index, GLdouble x)
+luaglew_glVertexAttribL1d(lua_State *L) {
+	glVertexAttribL1d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glVertexAttribL1dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttribL1dv(lua_State *L) {
+	glVertexAttribL1dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribL2d (GLuint index, GLdouble x, GLdouble y)
+luaglew_glVertexAttribL2d(lua_State *L) {
+	glVertexAttribL2d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glVertexAttribL2dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttribL2dv(lua_State *L) {
+	glVertexAttribL2dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribL3d (GLuint index, GLdouble x, GLdouble y, GLdouble z)
+luaglew_glVertexAttribL3d(lua_State *L) {
+	glVertexAttribL3d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glVertexAttribL3dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttribL3dv(lua_State *L) {
+	glVertexAttribL3dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribL4d (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)
+luaglew_glVertexAttribL4d(lua_State *L) {
+	glVertexAttribL4d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4), (GLdouble)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glVertexAttribL4dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttribL4dv(lua_State *L) {
+	glVertexAttribL4dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribLPointer (GLuint index, GLint size, GLenum type, GLsizei stride, const void* pointer)
+luaglew_glVertexAttribLPointer(lua_State *L) {
+	glVertexAttribLPointer(luaL_checkint(L, 1), luaL_checkint(L, 2), luaglew_enum(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (const void* pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightbvARB (GLint size, GLbyte *weights)
+luaglew_glWeightbvARB(lua_State *L) {
+	glWeightbvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLbyte *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightsvARB (GLint size, GLshort *weights)
+luaglew_glWeightsvARB(lua_State *L) {
+	glWeightsvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLshort *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightivARB (GLint size, GLint *weights)
+luaglew_glWeightivARB(lua_State *L) {
+	glWeightivARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLint *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightfvARB (GLint size, GLfloat *weights)
+luaglew_glWeightfvARB(lua_State *L) {
+	glWeightfvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLfloat *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightdvARB (GLint size, GLdouble *weights)
+luaglew_glWeightdvARB(lua_State *L) {
+	glWeightdvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLdouble *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightubvARB (GLint size, GLubyte *weights)
+luaglew_glWeightubvARB(lua_State *L) {
+	glWeightubvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLubyte *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightusvARB (GLint size, GLushort *weights)
+luaglew_glWeightusvARB(lua_State *L) {
+	glWeightusvARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLushort *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightuivARB (GLint size, GLuint *weights)
+luaglew_glWeightuivARB(lua_State *L) {
+	glWeightuivARB(luaL_checkint(L, 1), **********CHYBA POINTER (GLuint *weights) NEBINDOVAT************);
+	return 0;
+}
+// void glWeightPointerARB (GLint size, GLenum type, GLsizei stride, GLvoid *pointer)
+luaglew_glWeightPointerARB(lua_State *L) {
+	glWeightPointerARB(luaL_checkint(L, 1), luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexBlendARB (GLint count)
+luaglew_glVertexBlendARB(lua_State *L) {
+	glVertexBlendARB(luaL_checkint(L, 1));
+	return 0;
+}
+// void glTexBumpParameterivATI (GLenum pname, GLint *param)
+luaglew_glTexBumpParameterivATI(lua_State *L) {
+	glTexBumpParameterivATI(luaglew_enum(L, 1), **********CHYBA POINTER (GLint *param) NEBINDOVAT************);
+	return 0;
+}
+// void glTexBumpParameterfvATI (GLenum pname, GLfloat *param)
+luaglew_glTexBumpParameterfvATI(lua_State *L) {
+	glTexBumpParameterfvATI(luaglew_enum(L, 1), **********CHYBA POINTER (GLfloat *param) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTexBumpParameterivATI (GLenum pname, GLint *param)
+luaglew_glGetTexBumpParameterivATI(lua_State *L) {
+	glGetTexBumpParameterivATI(luaglew_enum(L, 1), **********CHYBA POINTER (GLint *param) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTexBumpParameterfvATI (GLenum pname, GLfloat *param)
+luaglew_glGetTexBumpParameterfvATI(lua_State *L) {
+	glGetTexBumpParameterfvATI(luaglew_enum(L, 1), **********CHYBA POINTER (GLfloat *param) NEBINDOVAT************);
+	return 0;
+}
+// void* glMapObjectBufferATI (GLuint buffer)
+luaglew_glMapObjectBufferATI(lua_State *L) {
+	glMapObjectBufferATI(luaL_checkint(L, 1));
+	return 0;
+}
+// void glUnmapObjectBufferATI (GLuint buffer)
+luaglew_glUnmapObjectBufferATI(lua_State *L) {
+	glUnmapObjectBufferATI(luaL_checkint(L, 1));
+	return 0;
+}
+// void glPNTrianglesiATI (GLenum pname, GLint param)
+luaglew_glPNTrianglesiATI(lua_State *L) {
+	glPNTrianglesiATI(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glPNTrianglesfATI (GLenum pname, GLfloat param)
+luaglew_glPNTrianglesfATI(lua_State *L) {
+	glPNTrianglesfATI(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glStencilOpSeparateATI (GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)
+luaglew_glStencilOpSeparateATI(lua_State *L) {
+	glStencilOpSeparateATI(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaglew_enum(L, 4));
+	return 0;
+}
+// void glStencilFuncSeparateATI (GLenum frontfunc, GLenum backfunc, GLint ref, GLuint mask)
+luaglew_glStencilFuncSeparateATI(lua_State *L) {
+	glStencilFuncSeparateATI(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glClientActiveVertexStreamATI (GLenum stream)
+luaglew_glClientActiveVertexStreamATI(lua_State *L) {
+	glClientActiveVertexStreamATI(luaglew_enum(L, 1));
+	return 0;
+}
+// void glVertexBlendEnviATI (GLenum pname, GLint param)
+luaglew_glVertexBlendEnviATI(lua_State *L) {
+	glVertexBlendEnviATI(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glVertexBlendEnvfATI (GLenum pname, GLfloat param)
+luaglew_glVertexBlendEnvfATI(lua_State *L) {
+	glVertexBlendEnvfATI(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glVertexStream2sATI (GLenum stream, GLshort x, GLshort y)
+luaglew_glVertexStream2sATI(lua_State *L) {
+	glVertexStream2sATI(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glVertexStream2svATI (GLenum stream, const GLshort *v)
+luaglew_glVertexStream2svATI(lua_State *L) {
+	glVertexStream2svATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream2iATI (GLenum stream, GLint x, GLint y)
+luaglew_glVertexStream2iATI(lua_State *L) {
+	glVertexStream2iATI(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glVertexStream2ivATI (GLenum stream, const GLint *v)
+luaglew_glVertexStream2ivATI(lua_State *L) {
+	glVertexStream2ivATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream2fATI (GLenum stream, GLfloat x, GLfloat y)
+luaglew_glVertexStream2fATI(lua_State *L) {
+	glVertexStream2fATI(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glVertexStream2fvATI (GLenum stream, const GLfloat *v)
+luaglew_glVertexStream2fvATI(lua_State *L) {
+	glVertexStream2fvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream2dATI (GLenum stream, GLdouble x, GLdouble y)
+luaglew_glVertexStream2dATI(lua_State *L) {
+	glVertexStream2dATI(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glVertexStream2dvATI (GLenum stream, const GLdouble *v)
+luaglew_glVertexStream2dvATI(lua_State *L) {
+	glVertexStream2dvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream3sATI (GLenum stream, GLshort x, GLshort y, GLshort z)
+luaglew_glVertexStream3sATI(lua_State *L) {
+	glVertexStream3sATI(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4));
+	return 0;
+}
+// void glVertexStream3svATI (GLenum stream, const GLshort *v)
+luaglew_glVertexStream3svATI(lua_State *L) {
+	glVertexStream3svATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream3iATI (GLenum stream, GLint x, GLint y, GLint z)
+luaglew_glVertexStream3iATI(lua_State *L) {
+	glVertexStream3iATI(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glVertexStream3ivATI (GLenum stream, const GLint *v)
+luaglew_glVertexStream3ivATI(lua_State *L) {
+	glVertexStream3ivATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream3fATI (GLenum stream, GLfloat x, GLfloat y, GLfloat z)
+luaglew_glVertexStream3fATI(lua_State *L) {
+	glVertexStream3fATI(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glVertexStream3fvATI (GLenum stream, const GLfloat *v)
+luaglew_glVertexStream3fvATI(lua_State *L) {
+	glVertexStream3fvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream3dATI (GLenum stream, GLdouble x, GLdouble y, GLdouble z)
+luaglew_glVertexStream3dATI(lua_State *L) {
+	glVertexStream3dATI(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glVertexStream3dvATI (GLenum stream, const GLdouble *v)
+luaglew_glVertexStream3dvATI(lua_State *L) {
+	glVertexStream3dvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream4sATI (GLenum stream, GLshort x, GLshort y, GLshort z, GLshort w)
+luaglew_glVertexStream4sATI(lua_State *L) {
+	glVertexStream4sATI(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4), (GLshort)luaL_checkinteger(L, 5));
+	return 0;
+}
+// void glVertexStream4svATI (GLenum stream, const GLshort *v)
+luaglew_glVertexStream4svATI(lua_State *L) {
+	glVertexStream4svATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream4iATI (GLenum stream, GLint x, GLint y, GLint z, GLint w)
+luaglew_glVertexStream4iATI(lua_State *L) {
+	glVertexStream4iATI(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glVertexStream4ivATI (GLenum stream, const GLint *v)
+luaglew_glVertexStream4ivATI(lua_State *L) {
+	glVertexStream4ivATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream4fATI (GLenum stream, GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+luaglew_glVertexStream4fATI(lua_State *L) {
+	glVertexStream4fATI(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4), (GLfloat)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glVertexStream4fvATI (GLenum stream, const GLfloat *v)
+luaglew_glVertexStream4fvATI(lua_State *L) {
+	glVertexStream4fvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexStream4dATI (GLenum stream, GLdouble x, GLdouble y, GLdouble z, GLdouble w)
+luaglew_glVertexStream4dATI(lua_State *L) {
+	glVertexStream4dATI(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4), (GLdouble)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glVertexStream4dvATI (GLenum stream, const GLdouble *v)
+luaglew_glVertexStream4dvATI(lua_State *L) {
+	glVertexStream4dvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glNormalStream3bATI (GLenum stream, GLbyte x, GLbyte y, GLbyte z)
+luaglew_glNormalStream3bATI(lua_State *L) {
+	glNormalStream3bATI(luaglew_enum(L, 1), **********CHYBA (GLbyte x) NEBINDOVAT************, **********CHYBA (GLbyte y) NEBINDOVAT************, **********CHYBA (GLbyte z) NEBINDOVAT************);
+	return 0;
+}
+// void glNormalStream3bvATI (GLenum stream, const GLbyte *v)
+luaglew_glNormalStream3bvATI(lua_State *L) {
+	glNormalStream3bvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLbyte *v) NEBINDOVAT************);
+	return 0;
+}
+// void glNormalStream3sATI (GLenum stream, GLshort x, GLshort y, GLshort z)
+luaglew_glNormalStream3sATI(lua_State *L) {
+	glNormalStream3sATI(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4));
+	return 0;
+}
+// void glNormalStream3svATI (GLenum stream, const GLshort *v)
+luaglew_glNormalStream3svATI(lua_State *L) {
+	glNormalStream3svATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glNormalStream3iATI (GLenum stream, GLint x, GLint y, GLint z)
+luaglew_glNormalStream3iATI(lua_State *L) {
+	glNormalStream3iATI(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glNormalStream3ivATI (GLenum stream, const GLint *v)
+luaglew_glNormalStream3ivATI(lua_State *L) {
+	glNormalStream3ivATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glNormalStream3fATI (GLenum stream, GLfloat x, GLfloat y, GLfloat z)
+luaglew_glNormalStream3fATI(lua_State *L) {
+	glNormalStream3fATI(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glNormalStream3fvATI (GLenum stream, const GLfloat *v)
+luaglew_glNormalStream3fvATI(lua_State *L) {
+	glNormalStream3fvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glNormalStream3dATI (GLenum stream, GLdouble x, GLdouble y, GLdouble z)
+luaglew_glNormalStream3dATI(lua_State *L) {
+	glNormalStream3dATI(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glNormalStream3dvATI (GLenum stream, const GLdouble *v)
+luaglew_glNormalStream3dvATI(lua_State *L) {
+	glNormalStream3dvATI(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformBufferEXT (GLuint program, GLint location, GLuint buffer)
+luaglew_glUniformBufferEXT(lua_State *L) {
+	glUniformBufferEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// GLint glGetUniformBufferSizeEXT (GLuint program, GLint location)
+luaglew_glGetUniformBufferSizeEXT(lua_State *L) {
+	glGetUniformBufferSizeEXT(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// GLintptr glGetUniformOffsetEXT (GLuint program, GLint location)
+luaglew_glGetUniformOffsetEXT(lua_State *L) {
+	glGetUniformOffsetEXT(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glDepthBoundsEXT (GLclampd zmin, GLclampd zmax)
+luaglew_glDepthBoundsEXT(lua_State *L) {
+	glDepthBoundsEXT(**********CHYBA (GLclampd zmin) NEBINDOVAT************, **********CHYBA (GLclampd zmax) NEBINDOVAT************);
+	return 0;
+}
+// void glDrawArraysInstancedEXT (GLenum mode, GLint start, GLsizei count, GLsizei primcount)
+luaglew_glDrawArraysInstancedEXT(lua_State *L) {
+	glDrawArraysInstancedEXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaL_checklong(L, 4)
+
+// void glDrawElementsInstancedEXT (GLenum mode, GLsizei count, GLenum type, const GLvoid *indices, GLsizei primcount)
+luaglew_glDrawElementsInstancedEXT(lua_State *L) {
+	glDrawElementsInstancedEXT(luaglew_enum(L, 1), luaL_checklong(L, 2), luaglew_enum(L, 3), **********CHYBA POINTER (const GLvoid *indices) NEBINDOVAT************, luaL_checklong(L, 5)
+
+// void glDrawRangeElementsEXT (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices)
+luaglew_glDrawRangeElementsEXT(lua_State *L) {
+	glDrawRangeElementsEXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaglew_enum(L, 5), **********CHYBA POINTER (const GLvoid *indices) NEBINDOVAT************);
+	return 0;
+}
+// void glFogCoordfEXT (GLfloat coord)
+luaglew_glFogCoordfEXT(lua_State *L) {
+	glFogCoordfEXT((GLfloat)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glFogCoordfvEXT (const GLfloat *coord)
+luaglew_glFogCoordfvEXT(lua_State *L) {
+	glFogCoordfvEXT(**********CHYBA POINTER (const GLfloat *coord) NEBINDOVAT************);
+	return 0;
+}
+// void glFogCoorddEXT (GLdouble coord)
+luaglew_glFogCoorddEXT(lua_State *L) {
+	glFogCoorddEXT((GLdouble)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glFogCoorddvEXT (const GLdouble *coord)
+luaglew_glFogCoorddvEXT(lua_State *L) {
+	glFogCoorddvEXT(**********CHYBA POINTER (const GLdouble *coord) NEBINDOVAT************);
+	return 0;
+}
+// void glFogCoordPointerEXT (GLenum type, GLsizei stride, const GLvoid *pointer)
+luaglew_glFogCoordPointerEXT(lua_State *L) {
+	glFogCoordPointerEXT(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramParameteriEXT (GLuint program, GLenum pname, GLint value)
+luaglew_glProgramParameteriEXT(lua_State *L) {
+	glProgramParameteriEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glFramebufferTextureEXT (GLenum target, GLenum attachment, GLuint texture, GLint level)
+luaglew_glFramebufferTextureEXT(lua_State *L) {
+	glFramebufferTextureEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glFramebufferTextureLayerEXT (GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer)
+luaglew_glFramebufferTextureLayerEXT(lua_State *L) {
+	glFramebufferTextureLayerEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glFramebufferTextureFaceEXT (GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face)
+luaglew_glFramebufferTextureFaceEXT(lua_State *L) {
+	glFramebufferTextureFaceEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaglew_enum(L, 5));
+	return 0;
+}
+// void glProgramEnvParameters4fvEXT (GLenum target, GLuint index, GLsizei count, const GLfloat* params)
+luaglew_glProgramEnvParameters4fvEXT(lua_State *L) {
+	glProgramEnvParameters4fvEXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLfloat* params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramLocalParameters4fvEXT (GLenum target, GLuint index, GLsizei count, const GLfloat* params)
+luaglew_glProgramLocalParameters4fvEXT(lua_State *L) {
+	glProgramLocalParameters4fvEXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLfloat* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetUniformuivEXT (GLuint program, GLint location, GLuint *params)
+luaglew_glGetUniformuivEXT(lua_State *L) {
+	glGetUniformuivEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glBindFragDataLocationEXT (GLuint program, GLuint color, const GLchar *name)
+luaglew_glBindFragDataLocationEXT(lua_State *L) {
+	glBindFragDataLocationEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLchar *name) NEBINDOVAT************);
+	return 0;
+}
+// GLint glGetFragDataLocationEXT (GLuint program, const GLchar *name)
+luaglew_glGetFragDataLocationEXT(lua_State *L) {
+	glGetFragDataLocationEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLchar *name) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform1uiEXT (GLint location, GLuint v0)
+luaglew_glUniform1uiEXT(lua_State *L) {
+	glUniform1uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glUniform2uiEXT (GLint location, GLuint v0, GLuint v1)
+luaglew_glUniform2uiEXT(lua_State *L) {
+	glUniform2uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glUniform3uiEXT (GLint location, GLuint v0, GLuint v1, GLuint v2)
+luaglew_glUniform3uiEXT(lua_State *L) {
+	glUniform3uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glUniform4uiEXT (GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3)
+luaglew_glUniform4uiEXT(lua_State *L) {
+	glUniform4uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glUniform1uivEXT (GLint location, GLsizei count, const GLuint *value)
+luaglew_glUniform1uivEXT(lua_State *L) {
+	glUniform1uivEXT(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform2uivEXT (GLint location, GLsizei count, const GLuint *value)
+luaglew_glUniform2uivEXT(lua_State *L) {
+	glUniform2uivEXT(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform3uivEXT (GLint location, GLsizei count, const GLuint *value)
+luaglew_glUniform3uivEXT(lua_State *L) {
+	glUniform3uivEXT(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform4uivEXT (GLint location, GLsizei count, const GLuint *value)
+luaglew_glUniform4uivEXT(lua_State *L) {
+	glUniform4uivEXT(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint *value) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI1iEXT (GLuint index, GLint x)
+luaglew_glVertexAttribI1iEXT(lua_State *L) {
+	glVertexAttribI1iEXT(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glVertexAttribI2iEXT (GLuint index, GLint x, GLint y)
+luaglew_glVertexAttribI2iEXT(lua_State *L) {
+	glVertexAttribI2iEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glVertexAttribI3iEXT (GLuint index, GLint x, GLint y, GLint z)
+luaglew_glVertexAttribI3iEXT(lua_State *L) {
+	glVertexAttribI3iEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glVertexAttribI4iEXT (GLuint index, GLint x, GLint y, GLint z, GLint w)
+luaglew_glVertexAttribI4iEXT(lua_State *L) {
+	glVertexAttribI4iEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glVertexAttribI1uiEXT (GLuint index, GLuint x)
+luaglew_glVertexAttribI1uiEXT(lua_State *L) {
+	glVertexAttribI1uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glVertexAttribI2uiEXT (GLuint index, GLuint x, GLuint y)
+luaglew_glVertexAttribI2uiEXT(lua_State *L) {
+	glVertexAttribI2uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glVertexAttribI3uiEXT (GLuint index, GLuint x, GLuint y, GLuint z)
+luaglew_glVertexAttribI3uiEXT(lua_State *L) {
+	glVertexAttribI3uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glVertexAttribI4uiEXT (GLuint index, GLuint x, GLuint y, GLuint z, GLuint w)
+luaglew_glVertexAttribI4uiEXT(lua_State *L) {
+	glVertexAttribI4uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glVertexAttribI1ivEXT (GLuint index, const GLint *v)
+luaglew_glVertexAttribI1ivEXT(lua_State *L) {
+	glVertexAttribI1ivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI2ivEXT (GLuint index, const GLint *v)
+luaglew_glVertexAttribI2ivEXT(lua_State *L) {
+	glVertexAttribI2ivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI3ivEXT (GLuint index, const GLint *v)
+luaglew_glVertexAttribI3ivEXT(lua_State *L) {
+	glVertexAttribI3ivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4ivEXT (GLuint index, const GLint *v)
+luaglew_glVertexAttribI4ivEXT(lua_State *L) {
+	glVertexAttribI4ivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI1uivEXT (GLuint index, const GLuint *v)
+luaglew_glVertexAttribI1uivEXT(lua_State *L) {
+	glVertexAttribI1uivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI2uivEXT (GLuint index, const GLuint *v)
+luaglew_glVertexAttribI2uivEXT(lua_State *L) {
+	glVertexAttribI2uivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI3uivEXT (GLuint index, const GLuint *v)
+luaglew_glVertexAttribI3uivEXT(lua_State *L) {
+	glVertexAttribI3uivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4uivEXT (GLuint index, const GLuint *v)
+luaglew_glVertexAttribI4uivEXT(lua_State *L) {
+	glVertexAttribI4uivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4bvEXT (GLuint index, const GLbyte *v)
+luaglew_glVertexAttribI4bvEXT(lua_State *L) {
+	glVertexAttribI4bvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLbyte *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4svEXT (GLuint index, const GLshort *v)
+luaglew_glVertexAttribI4svEXT(lua_State *L) {
+	glVertexAttribI4svEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4ubvEXT (GLuint index, const GLubyte *v)
+luaglew_glVertexAttribI4ubvEXT(lua_State *L) {
+	glVertexAttribI4ubvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLubyte *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4usvEXT (GLuint index, const GLushort *v)
+luaglew_glVertexAttribI4usvEXT(lua_State *L) {
+	glVertexAttribI4usvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (const GLushort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribIPointerEXT (GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid *pointer)
+luaglew_glVertexAttribIPointerEXT(lua_State *L) {
+	glVertexAttribIPointerEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaglew_enum(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (const GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribIivEXT (GLuint index, GLenum pname, GLint *params)
+luaglew_glGetVertexAttribIivEXT(lua_State *L) {
+	glGetVertexAttribIivEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribIuivEXT (GLuint index, GLenum pname, GLuint *params)
+luaglew_glGetVertexAttribIuivEXT(lua_State *L) {
+	glGetVertexAttribIuivEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glPointParameterfEXT (GLenum pname, GLfloat param)
+luaglew_glPointParameterfEXT(lua_State *L) {
+	glPointParameterfEXT(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glPointParameterfvEXT (GLenum pname, const GLfloat* params)
+luaglew_glPointParameterfvEXT(lua_State *L) {
+	glPointParameterfvEXT(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat* params) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3bEXT (GLbyte red, GLbyte green, GLbyte blue)
+luaglew_glSecondaryColor3bEXT(lua_State *L) {
+	glSecondaryColor3bEXT(**********CHYBA (GLbyte red) NEBINDOVAT************, **********CHYBA (GLbyte green) NEBINDOVAT************, **********CHYBA (GLbyte blue) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3bvEXT (const GLbyte *v)
+luaglew_glSecondaryColor3bvEXT(lua_State *L) {
+	glSecondaryColor3bvEXT(**********CHYBA POINTER (const GLbyte *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3dEXT (GLdouble red, GLdouble green, GLdouble blue)
+luaglew_glSecondaryColor3dEXT(lua_State *L) {
+	glSecondaryColor3dEXT((GLdouble)luaL_checknumber(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glSecondaryColor3dvEXT (const GLdouble *v)
+luaglew_glSecondaryColor3dvEXT(lua_State *L) {
+	glSecondaryColor3dvEXT(**********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3fEXT (GLfloat red, GLfloat green, GLfloat blue)
+luaglew_glSecondaryColor3fEXT(lua_State *L) {
+	glSecondaryColor3fEXT((GLfloat)luaL_checknumber(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glSecondaryColor3fvEXT (const GLfloat *v)
+luaglew_glSecondaryColor3fvEXT(lua_State *L) {
+	glSecondaryColor3fvEXT(**********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3iEXT (GLint red, GLint green, GLint blue)
+luaglew_glSecondaryColor3iEXT(lua_State *L) {
+	glSecondaryColor3iEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glSecondaryColor3ivEXT (const GLint *v)
+luaglew_glSecondaryColor3ivEXT(lua_State *L) {
+	glSecondaryColor3ivEXT(**********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3sEXT (GLshort red, GLshort green, GLshort blue)
+luaglew_glSecondaryColor3sEXT(lua_State *L) {
+	glSecondaryColor3sEXT((GLshort)luaL_checkinteger(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glSecondaryColor3svEXT (const GLshort *v)
+luaglew_glSecondaryColor3svEXT(lua_State *L) {
+	glSecondaryColor3svEXT(**********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3ubEXT (GLubyte red, GLubyte green, GLubyte blue)
+luaglew_glSecondaryColor3ubEXT(lua_State *L) {
+	glSecondaryColor3ubEXT(**********CHYBA (GLubyte red) NEBINDOVAT************, **********CHYBA (GLubyte green) NEBINDOVAT************, **********CHYBA (GLubyte blue) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3ubvEXT (const GLubyte *v)
+luaglew_glSecondaryColor3ubvEXT(lua_State *L) {
+	glSecondaryColor3ubvEXT(**********CHYBA POINTER (const GLubyte *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3uiEXT (GLuint red, GLuint green, GLuint blue)
+luaglew_glSecondaryColor3uiEXT(lua_State *L) {
+	glSecondaryColor3uiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glSecondaryColor3uivEXT (const GLuint *v)
+luaglew_glSecondaryColor3uivEXT(lua_State *L) {
+	glSecondaryColor3uivEXT(**********CHYBA POINTER (const GLuint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3usEXT (GLushort red, GLushort green, GLushort blue)
+luaglew_glSecondaryColor3usEXT(lua_State *L) {
+	glSecondaryColor3usEXT((GLushort)luaL_checkinteger(L, 1), (GLushort)luaL_checkinteger(L, 2), (GLushort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glSecondaryColor3usvEXT (const GLushort *v)
+luaglew_glSecondaryColor3usvEXT(lua_State *L) {
+	glSecondaryColor3usvEXT(**********CHYBA POINTER (const GLushort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColorPointerEXT (GLint size, GLenum type, GLsizei stride, GLvoid *pointer)
+luaglew_glSecondaryColorPointerEXT(lua_State *L) {
+	glSecondaryColorPointerEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glTexBufferEXT (GLenum target, GLenum internalformat, GLuint buffer)
+luaglew_glTexBufferEXT(lua_State *L) {
+	glTexBufferEXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glTexParameterIivEXT (GLenum target, GLenum pname, const GLint *params)
+luaglew_glTexParameterIivEXT(lua_State *L) {
+	glTexParameterIivEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glTexParameterIuivEXT (GLenum target, GLenum pname, const GLuint *params)
+luaglew_glTexParameterIuivEXT(lua_State *L) {
+	glTexParameterIuivEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTexParameterIivEXT (GLenum target, GLenum pname, GLint *params)
+luaglew_glGetTexParameterIivEXT(lua_State *L) {
+	glGetTexParameterIivEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTexParameterIuivEXT (GLenum target, GLenum pname, GLuint *params)
+luaglew_glGetTexParameterIuivEXT(lua_State *L) {
+	glGetTexParameterIuivEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glClearColorIiEXT (GLint red, GLint green, GLint blue, GLint alpha)
+luaglew_glClearColorIiEXT(lua_State *L) {
+	glClearColorIiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glClearColorIuiEXT (GLuint red, GLuint green, GLuint blue, GLuint alpha)
+luaglew_glClearColorIuiEXT(lua_State *L) {
+	glClearColorIuiEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glGetQueryObjecti64vEXT (GLuint id, GLenum pname, GLint64EXT *params)
+luaglew_glGetQueryObjecti64vEXT(lua_State *L) {
+	glGetQueryObjecti64vEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint64EXT *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetQueryObjectui64vEXT (GLuint id, GLenum pname, GLuint64EXT *params)
+luaglew_glGetQueryObjectui64vEXT(lua_State *L) {
+	glGetQueryObjectui64vEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint64EXT *params) NEBINDOVAT************);
+	return 0;
+}
+// void glBeginVertexShaderEXT (void)
+luaglew_glBeginVertexShaderEXT(lua_State *L) {
+	glBeginVertexShaderEXT(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// void glEndVertexShaderEXT (void)
+luaglew_glEndVertexShaderEXT(lua_State *L) {
+	glEndVertexShaderEXT(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// void glBindVertexShaderEXT (GLuint id)
+luaglew_glBindVertexShaderEXT(lua_State *L) {
+	glBindVertexShaderEXT(luaL_checkint(L, 1));
+	return 0;
+}
+// GLuint glGenVertexShadersEXT (GLuint range)
+luaglew_glGenVertexShadersEXT(lua_State *L) {
+	glGenVertexShadersEXT(luaL_checkint(L, 1));
+	return 0;
+}
+// void glDeleteVertexShaderEXT (GLuint id)
+luaglew_glDeleteVertexShaderEXT(lua_State *L) {
+	glDeleteVertexShaderEXT(luaL_checkint(L, 1));
+	return 0;
+}
+// void glShaderOp1EXT (GLenum op, GLuint res, GLuint arg1)
+luaglew_glShaderOp1EXT(lua_State *L) {
+	glShaderOp1EXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glShaderOp2EXT (GLenum op, GLuint res, GLuint arg1, GLuint arg2)
+luaglew_glShaderOp2EXT(lua_State *L) {
+	glShaderOp2EXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glShaderOp3EXT (GLenum op, GLuint res, GLuint arg1, GLuint arg2, GLuint arg3)
+luaglew_glShaderOp3EXT(lua_State *L) {
+	glShaderOp3EXT(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glSwizzleEXT (GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW)
+luaglew_glSwizzleEXT(lua_State *L) {
+	glSwizzleEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaglew_enum(L, 3), luaglew_enum(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6));
+	return 0;
+}
+// void glWriteMaskEXT (GLuint res, GLuint in, GLenum outX, GLenum outY, GLenum outZ, GLenum outW)
+luaglew_glWriteMaskEXT(lua_State *L) {
+	glWriteMaskEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaglew_enum(L, 3), luaglew_enum(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6));
+	return 0;
+}
+// void glInsertComponentEXT (GLuint res, GLuint src, GLuint num)
+luaglew_glInsertComponentEXT(lua_State *L) {
+	glInsertComponentEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glExtractComponentEXT (GLuint res, GLuint src, GLuint num)
+luaglew_glExtractComponentEXT(lua_State *L) {
+	glExtractComponentEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// GLuint glGenSymbolsEXT (GLenum dataType, GLenum storageType, GLenum range, GLuint components)
+luaglew_glGenSymbolsEXT(lua_State *L) {
+	glGenSymbolsEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glSetInvariantEXT (GLuint id, GLenum type, GLvoid *addr)
+luaglew_glSetInvariantEXT(lua_State *L) {
+	glSetInvariantEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLvoid *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glSetLocalConstantEXT (GLuint id, GLenum type, GLvoid *addr)
+luaglew_glSetLocalConstantEXT(lua_State *L) {
+	glSetLocalConstantEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLvoid *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantbvEXT (GLuint id, GLbyte *addr)
+luaglew_glVariantbvEXT(lua_State *L) {
+	glVariantbvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLbyte *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantsvEXT (GLuint id, GLshort *addr)
+luaglew_glVariantsvEXT(lua_State *L) {
+	glVariantsvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLshort *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantivEXT (GLuint id, GLint *addr)
+luaglew_glVariantivEXT(lua_State *L) {
+	glVariantivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLint *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantfvEXT (GLuint id, GLfloat *addr)
+luaglew_glVariantfvEXT(lua_State *L) {
+	glVariantfvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLfloat *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantdvEXT (GLuint id, GLdouble *addr)
+luaglew_glVariantdvEXT(lua_State *L) {
+	glVariantdvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLdouble *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantubvEXT (GLuint id, GLubyte *addr)
+luaglew_glVariantubvEXT(lua_State *L) {
+	glVariantubvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLubyte *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantusvEXT (GLuint id, GLushort *addr)
+luaglew_glVariantusvEXT(lua_State *L) {
+	glVariantusvEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLushort *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantuivEXT (GLuint id, GLuint *addr)
+luaglew_glVariantuivEXT(lua_State *L) {
+	glVariantuivEXT(luaL_checkint(L, 1), **********CHYBA POINTER (GLuint *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glVariantPointerEXT (GLuint id, GLenum type, GLuint stride, GLvoid *addr)
+luaglew_glVariantPointerEXT(lua_State *L) {
+	glVariantPointerEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3), **********CHYBA POINTER (GLvoid *addr) NEBINDOVAT************);
+	return 0;
+}
+// void glEnableVariantClientStateEXT (GLuint id)
+luaglew_glEnableVariantClientStateEXT(lua_State *L) {
+	glEnableVariantClientStateEXT(luaL_checkint(L, 1));
+	return 0;
+}
+// void glDisableVariantClientStateEXT (GLuint id)
+luaglew_glDisableVariantClientStateEXT(lua_State *L) {
+	glDisableVariantClientStateEXT(luaL_checkint(L, 1));
+	return 0;
+}
+// GLuint glBindLightParameterEXT (GLenum light, GLenum value)
+luaglew_glBindLightParameterEXT(lua_State *L) {
+	glBindLightParameterEXT(luaglew_enum(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// GLuint glBindMaterialParameterEXT (GLenum face, GLenum value)
+luaglew_glBindMaterialParameterEXT(lua_State *L) {
+	glBindMaterialParameterEXT(luaglew_enum(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// GLuint glBindTexGenParameterEXT (GLenum unit, GLenum coord, GLenum value)
+luaglew_glBindTexGenParameterEXT(lua_State *L) {
+	glBindTexGenParameterEXT(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3));
+	return 0;
+}
+// GLuint glBindTextureUnitParameterEXT (GLenum unit, GLenum value)
+luaglew_glBindTextureUnitParameterEXT(lua_State *L) {
+	glBindTextureUnitParameterEXT(luaglew_enum(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// GLuint glBindParameterEXT (GLenum value)
+luaglew_glBindParameterEXT(lua_State *L) {
+	glBindParameterEXT(luaglew_enum(L, 1));
+	return 0;
+}
+// GLboolean glIsVariantEnabledEXT (GLuint id, GLenum cap)
+luaglew_glIsVariantEnabledEXT(lua_State *L) {
+	glIsVariantEnabledEXT(luaL_checkint(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// void glGetVariantBooleanvEXT (GLuint id, GLenum value, GLboolean *data)
+luaglew_glGetVariantBooleanvEXT(lua_State *L) {
+	glGetVariantBooleanvEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLboolean *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVariantIntegervEXT (GLuint id, GLenum value, GLint *data)
+luaglew_glGetVariantIntegervEXT(lua_State *L) {
+	glGetVariantIntegervEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVariantFloatvEXT (GLuint id, GLenum value, GLfloat *data)
+luaglew_glGetVariantFloatvEXT(lua_State *L) {
+	glGetVariantFloatvEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVariantPointervEXT (GLuint id, GLenum value, GLvoid **data)
+luaglew_glGetVariantPointervEXT(lua_State *L) {
+	glGetVariantPointervEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLvoid **data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetInvariantBooleanvEXT (GLuint id, GLenum value, GLboolean *data)
+luaglew_glGetInvariantBooleanvEXT(lua_State *L) {
+	glGetInvariantBooleanvEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLboolean *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetInvariantIntegervEXT (GLuint id, GLenum value, GLint *data)
+luaglew_glGetInvariantIntegervEXT(lua_State *L) {
+	glGetInvariantIntegervEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetInvariantFloatvEXT (GLuint id, GLenum value, GLfloat *data)
+luaglew_glGetInvariantFloatvEXT(lua_State *L) {
+	glGetInvariantFloatvEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetLocalConstantBooleanvEXT (GLuint id, GLenum value, GLboolean *data)
+luaglew_glGetLocalConstantBooleanvEXT(lua_State *L) {
+	glGetLocalConstantBooleanvEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLboolean *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetLocalConstantIntegervEXT (GLuint id, GLenum value, GLint *data)
+luaglew_glGetLocalConstantIntegervEXT(lua_State *L) {
+	glGetLocalConstantIntegervEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint *data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetLocalConstantFloatvEXT (GLuint id, GLenum value, GLfloat *data)
+luaglew_glGetLocalConstantFloatvEXT(lua_State *L) {
+	glGetLocalConstantFloatvEXT(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat *data) NEBINDOVAT************);
+	return 0;
+}
+// GLuint glBufferRegionEnabledEXT (void)
+luaglew_glBufferRegionEnabledEXT(lua_State *L) {
+	glBufferRegionEnabledEXT(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// GLuint glNewBufferRegionEXT (GLenum region)
+luaglew_glNewBufferRegionEXT(lua_State *L) {
+	glNewBufferRegionEXT(luaglew_enum(L, 1));
+	return 0;
+}
+// void glDeleteBufferRegionEXT (GLenum region)
+luaglew_glDeleteBufferRegionEXT(lua_State *L) {
+	glDeleteBufferRegionEXT(luaglew_enum(L, 1));
+	return 0;
+}
+// void glReadBufferRegionEXT (GLuint region, GLint x, GLint y, GLsizei width, GLsizei height)
+luaglew_glReadBufferRegionEXT(lua_State *L) {
+	glReadBufferRegionEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaL_checklong(L, 5)
+
+// void glDrawBufferRegionEXT (GLuint region, GLint x, GLint y, GLsizei width, GLsizei height, GLint xDest, GLint yDest)
+luaglew_glDrawBufferRegionEXT(lua_State *L) {
+	glDrawBufferRegionEXT(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaL_checklong(L, 5), luaL_checkint(L, 6), luaL_checkint(L, 7));
+	return 0;
+}
+// void glDepthRangedNV (GLdouble zNear, GLdouble zFar)
+luaglew_glDepthRangedNV(lua_State *L) {
+	glDepthRangedNV((GLdouble)luaL_checknumber(L, 1), (GLdouble)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glClearDepthdNV (GLdouble depth)
+luaglew_glClearDepthdNV(lua_State *L) {
+	glClearDepthdNV((GLdouble)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glDepthBoundsdNV (GLdouble zmin, GLdouble zmax)
+luaglew_glDepthBoundsdNV(lua_State *L) {
+	glDepthBoundsdNV((GLdouble)luaL_checknumber(L, 1), (GLdouble)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glRenderbufferStorageMultisampleCoverageNV (GLenum target, GLsizei coverageSamples, GLsizei colorSamples, GLenum internalformat, GLsizei width, GLsizei height)
+luaglew_glRenderbufferStorageMultisampleCoverageNV(lua_State *L) {
+	glRenderbufferStorageMultisampleCoverageNV(luaglew_enum(L, 1), luaL_checklong(L, 2), luaL_checklong(L, 3), luaL_checkint(L, 4), luaL_checklong(L, 5), luaL_checklong(L, 6)
+
+// void glProgramVertexLimitNV (GLenum target, GLint limit)
+luaglew_glProgramVertexLimitNV(lua_State *L) {
+	glProgramVertexLimitNV(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glProgramLocalParameterI4iNV (GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w)
+luaglew_glProgramLocalParameterI4iNV(lua_State *L) {
+	glProgramLocalParameterI4iNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checkint(L, 6));
+	return 0;
+}
+// void glProgramLocalParameterI4ivNV (GLenum target, GLuint index, const GLint *params)
+luaglew_glProgramLocalParameterI4ivNV(lua_State *L) {
+	glProgramLocalParameterI4ivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramLocalParametersI4ivNV (GLenum target, GLuint index, GLsizei count, const GLint *params)
+luaglew_glProgramLocalParametersI4ivNV(lua_State *L) {
+	glProgramLocalParametersI4ivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramLocalParameterI4uiNV (GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w)
+luaglew_glProgramLocalParameterI4uiNV(lua_State *L) {
+	glProgramLocalParameterI4uiNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checkint(L, 6));
+	return 0;
+}
+// void glProgramLocalParameterI4uivNV (GLenum target, GLuint index, const GLuint *params)
+luaglew_glProgramLocalParameterI4uivNV(lua_State *L) {
+	glProgramLocalParameterI4uivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramLocalParametersI4uivNV (GLenum target, GLuint index, GLsizei count, const GLuint *params)
+luaglew_glProgramLocalParametersI4uivNV(lua_State *L) {
+	glProgramLocalParametersI4uivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramEnvParameterI4iNV (GLenum target, GLuint index, GLint x, GLint y, GLint z, GLint w)
+luaglew_glProgramEnvParameterI4iNV(lua_State *L) {
+	glProgramEnvParameterI4iNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checkint(L, 6));
+	return 0;
+}
+// void glProgramEnvParameterI4ivNV (GLenum target, GLuint index, const GLint *params)
+luaglew_glProgramEnvParameterI4ivNV(lua_State *L) {
+	glProgramEnvParameterI4ivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramEnvParametersI4ivNV (GLenum target, GLuint index, GLsizei count, const GLint *params)
+luaglew_glProgramEnvParametersI4ivNV(lua_State *L) {
+	glProgramEnvParametersI4ivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramEnvParameterI4uiNV (GLenum target, GLuint index, GLuint x, GLuint y, GLuint z, GLuint w)
+luaglew_glProgramEnvParameterI4uiNV(lua_State *L) {
+	glProgramEnvParameterI4uiNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checkint(L, 6));
+	return 0;
+}
+// void glProgramEnvParameterI4uivNV (GLenum target, GLuint index, const GLuint *params)
+luaglew_glProgramEnvParameterI4uivNV(lua_State *L) {
+	glProgramEnvParameterI4uivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramEnvParametersI4uivNV (GLenum target, GLuint index, GLsizei count, const GLuint *params)
+luaglew_glProgramEnvParametersI4uivNV(lua_State *L) {
+	glProgramEnvParametersI4uivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramBufferParametersfvNV (GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLfloat *params)
+luaglew_glProgramBufferParametersfvNV(lua_State *L) {
+	glProgramBufferParametersfvNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (const GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramBufferParametersIivNV (GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLint *params)
+luaglew_glProgramBufferParametersIivNV(lua_State *L) {
+	glProgramBufferParametersIivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glProgramBufferParametersIuivNV (GLenum target, GLuint buffer, GLuint index, GLsizei count, const GLuint *params)
+luaglew_glProgramBufferParametersIuivNV(lua_State *L) {
+	glProgramBufferParametersIuivNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (const GLuint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVideoi64vNV (GLuint video_slot, GLenum pname, GLint64EXT* params)
+luaglew_glGetVideoi64vNV(lua_State *L) {
+	glGetVideoi64vNV(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint64EXT* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVideoivNV (GLuint video_slot, GLenum pname, GLint* params)
+luaglew_glGetVideoivNV(lua_State *L) {
+	glGetVideoivNV(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVideoui64vNV (GLuint video_slot, GLenum pname, GLuint64EXT* params)
+luaglew_glGetVideoui64vNV(lua_State *L) {
+	glGetVideoui64vNV(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint64EXT* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVideouivNV (GLuint video_slot, GLenum pname, GLuint* params)
+luaglew_glGetVideouivNV(lua_State *L) {
+	glGetVideouivNV(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glPresentFrameDualFillNV (GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLenum target1, GLuintluaglew_glPresentFrameDualFillNV(lua_State *L) {
+	glPresentFrameDualFillNV(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6), luaL_checkint(L, 7), luaglew_enum(L, 8), luaL_checkint(L, 9));
+	return 0;
+}
+// void glPresentFrameKeyedNV (GLuint video_slot, GLuint64EXT minPresentTime, GLuint beginPresentTimeId, GLuint presentDurationId, GLenum type, GLenum target0, GLuint fill0, GLuint key0, GLenum targeluaglew_glPresentFrameKeyedNV(lua_State *L) {
+	glPresentFrameKeyedNV(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6), luaL_checkint(L, 7), luaL_checkint(L, 8), luaglew_enum(L, 9));
+	return 0;
+}
+// void glBeginTransformFeedbackNV (GLenum primitiveMode)
+luaglew_glBeginTransformFeedbackNV(lua_State *L) {
+	glBeginTransformFeedbackNV(luaglew_enum(L, 1));
+	return 0;
+}
+// void glEndTransformFeedbackNV (void)
+luaglew_glEndTransformFeedbackNV(lua_State *L) {
+	glEndTransformFeedbackNV(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// void glTransformFeedbackAttribsNV (GLuint count, const GLint *attribs, GLenum bufferMode)
+luaglew_glTransformFeedbackAttribsNV(lua_State *L) {
+	glTransformFeedbackAttribsNV(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint *attribs) NEBINDOVAT************, luaglew_enum(L, 3));
+	return 0;
+}
+// void glBindBufferRangeNV (GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size)
+luaglew_glBindBufferRangeNV(lua_State *L) {
+	glBindBufferRangeNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checklong(L, 5)
+
+// void glBindBufferOffsetNV (GLenum target, GLuint index, GLuint buffer, GLintptr offset)
+luaglew_glBindBufferOffsetNV(lua_State *L) {
+	glBindBufferOffsetNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glBindBufferBaseNV (GLenum target, GLuint index, GLuint buffer)
+luaglew_glBindBufferBaseNV(lua_State *L) {
+	glBindBufferBaseNV(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glTransformFeedbackVaryingsNV (GLuint program, GLsizei count, const GLint *locations, GLenum bufferMode)
+luaglew_glTransformFeedbackVaryingsNV(lua_State *L) {
+	glTransformFeedbackVaryingsNV(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLint *locations) NEBINDOVAT************, luaglew_enum(L, 4));
+	return 0;
+}
+// void glActiveVaryingNV (GLuint program, const GLchar *name)
+luaglew_glActiveVaryingNV(lua_State *L) {
+	glActiveVaryingNV(luaL_checkint(L, 1), **********CHYBA POINTER (const GLchar *name) NEBINDOVAT************);
+	return 0;
+}
+// GLint glGetVaryingLocationNV (GLuint program, const GLchar *name)
+luaglew_glGetVaryingLocationNV(lua_State *L) {
+	glGetVaryingLocationNV(luaL_checkint(L, 1), **********CHYBA POINTER (const GLchar *name) NEBINDOVAT************);
+	return 0;
+}
+// void glGetActiveVaryingNV (GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name)
+luaglew_glGetActiveVaryingNV(lua_State *L) {
+	glGetActiveVaryingNV(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLsizei *length) NEBINDOVAT************, **********CHYBA POINTER (GLsizei *size) NEBINDOVAT************, **********CHYBA POINTER (GLenum *type) NEBINDOVAT************, **********CHYBA POINTER (GLchar *name) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTransformFeedbackVaryingNV (GLuint program, GLuint index, GLint *location)
+luaglew_glGetTransformFeedbackVaryingNV(lua_State *L) {
+	glGetTransformFeedbackVaryingNV(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLint *location) NEBINDOVAT************);
+	return 0;
+}
+// void glVDPAUFiniNV (void)
+luaglew_glVDPAUFiniNV(lua_State *L) {
+	glVDPAUFiniNV(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// void glVDPAUGetSurfaceivNV (GLvdpauSurfaceNV surface, GLenum pname, GLsizei bufSize, GLsizei* length, GLint *values)
+luaglew_glVDPAUGetSurfaceivNV(lua_State *L) {
+	glVDPAUGetSurfaceivNV(**********CHYBA (GLvdpauSurfaceNV surface) NEBINDOVAT************, luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLsizei* length) NEBINDOVAT************, **********CHYBA POINTER (GLint *values) NEBINDOVAT************);
+	return 0;
+}
+// void glVDPAUInitNV (const void* vdpDevice, const GLvoid*getProcAddress)
+luaglew_glVDPAUInitNV(lua_State *L) {
+	glVDPAUInitNV(**********CHYBA POINTER (const void* vdpDevice) NEBINDOVAT************, **********CHYBA POINTER (const GLvoid*getProcAddress) NEBINDOVAT************);
+	return 0;
+}
+// void glVDPAUIsSurfaceNV (GLvdpauSurfaceNV surface)
+luaglew_glVDPAUIsSurfaceNV(lua_State *L) {
+	glVDPAUIsSurfaceNV(**********CHYBA (GLvdpauSurfaceNV surface) NEBINDOVAT************);
+	return 0;
+}
+// void glVDPAUMapSurfacesNV (GLsizei numSurfaces, const GLvdpauSurfaceNV* surfaces)
+luaglew_glVDPAUMapSurfacesNV(lua_State *L) {
+	glVDPAUMapSurfacesNV(luaL_checklong(L, 1), **********CHYBA POINTER (const GLvdpauSurfaceNV* surfaces) NEBINDOVAT************);
+	return 0;
+}
+// GLvdpauSurfaceNV glVDPAURegisterOutputSurfaceNV (const void* vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames)
+luaglew_glVDPAURegisterOutputSurfaceNV(lua_State *L) {
+	glVDPAURegisterOutputSurfaceNV(**********CHYBA POINTER (const void* vdpSurface) NEBINDOVAT************, luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint *textureNames) NEBINDOVAT************);
+	return 0;
+}
+// GLvdpauSurfaceNV glVDPAURegisterVideoSurfaceNV (const void* vdpSurface, GLenum target, GLsizei numTextureNames, const GLuint *textureNames)
+luaglew_glVDPAURegisterVideoSurfaceNV(lua_State *L) {
+	glVDPAURegisterVideoSurfaceNV(**********CHYBA POINTER (const void* vdpSurface) NEBINDOVAT************, luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLuint *textureNames) NEBINDOVAT************);
+	return 0;
+}
+// void glVDPAUSurfaceAccessNV (GLvdpauSurfaceNV surface, GLenum access)
+luaglew_glVDPAUSurfaceAccessNV(lua_State *L) {
+	glVDPAUSurfaceAccessNV(**********CHYBA (GLvdpauSurfaceNV surface) NEBINDOVAT************, luaglew_enum(L, 2));
+	return 0;
+}
+// void glVDPAUUnmapSurfacesNV (GLsizei numSurface, const GLvdpauSurfaceNV* surfaces)
+luaglew_glVDPAUUnmapSurfacesNV(lua_State *L) {
+	glVDPAUUnmapSurfacesNV(luaL_checklong(L, 1), **********CHYBA POINTER (const GLvdpauSurfaceNV* surfaces) NEBINDOVAT************);
+	return 0;
+}
+// void glVDPAUUnregisterSurfaceNV (GLvdpauSurfaceNV surface)
+luaglew_glVDPAUUnregisterSurfaceNV(lua_State *L) {
+	glVDPAUUnregisterSurfaceNV(**********CHYBA (GLvdpauSurfaceNV surface) NEBINDOVAT************);
+	return 0;
+}
+// void glReadVideoPixelsSUN (GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid* pixels)
+luaglew_glReadVideoPixelsSUN(lua_State *L) {
+	glReadVideoPixelsSUN(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaL_checklong(L, 4), luaglew_enum(L, 5), luaglew_enum(L, 6), **********CHYBA POINTER (GLvoid* pixels) NEBINDOVAT************);
+	return 0;
+}
+// void glDrawRangeElements (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid *indices)
+luaglew_glDrawRangeElements(lua_State *L) {
+	glDrawRangeElements(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaglew_enum(L, 5), **********CHYBA POINTER (const GLvoid *indices) NEBINDOVAT************);
+	return 0;
+}
+// void glTexImage3D (GLenum target, GLint level, GLint internalFormat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid *pixels)
+luaglew_glTexImage3D(lua_State *L) {
+	glTexImage3D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaL_checklong(L, 5), luaL_checklong(L, 6), luaL_checkint(L, 7), luaglew_enum(L, 8), luaglew_enum(L, 9), **********CHYBA POINTER (const GLvoid *pixels) NEBINDOVAT************);
+	return 0;
+}
+// void glTexSubImage3D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid *pixels)
+luaglew_glTexSubImage3D(lua_State *L) {
+	glTexSubImage3D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checklong(L, 6), luaL_checklong(L, 7), luaL_checklong(L, 8), luaglew_enum(L, 9), luaglew_enum(L, 10), **********CHYBA POINTER (const GLvoid *pixels) NEBINDOVAT************);
+	return 0;
+}
+// void glCopyTexSubImage3D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height)
+luaglew_glCopyTexSubImage3D(lua_State *L) {
+	glCopyTexSubImage3D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checkint(L, 6), luaL_checkint(L, 7), luaL_checklong(L, 8), luaL_checklong(L, 9)
+
+// void glActiveTexture (GLenum texture)
+luaglew_glActiveTexture(lua_State *L) {
+	glActiveTexture(luaglew_enum(L, 1));
+	return 0;
+}
+// void glClientActiveTexture (GLenum texture)
+luaglew_glClientActiveTexture(lua_State *L) {
+	glClientActiveTexture(luaglew_enum(L, 1));
+	return 0;
+}
+// void glCompressedTexImage1D (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const GLvoid *data)
+luaglew_glCompressedTexImage1D(lua_State *L) {
+	glCompressedTexImage1D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaL_checkint(L, 5), luaL_checklong(L, 6), **********CHYBA POINTER (const GLvoid *data) NEBINDOVAT************);
+	return 0;
+}
+// void glCompressedTexImage2D (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const GLvoid *data)
+luaglew_glCompressedTexImage2D(lua_State *L) {
+	glCompressedTexImage2D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaL_checklong(L, 5), luaL_checkint(L, 6), luaL_checklong(L, 7), **********CHYBA POINTER (const GLvoid *data) NEBINDOVAT************);
+	return 0;
+}
+// void glCompressedTexImage3D (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid *data)
+luaglew_glCompressedTexImage3D(lua_State *L) {
+	glCompressedTexImage3D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaL_checklong(L, 5), luaL_checklong(L, 6), luaL_checkint(L, 7), luaL_checklong(L, 8), **********CHYBA POINTER (const GLvoid *data) NEBINDOVAT************);
+	return 0;
+}
+// void glCompressedTexSubImage1D (GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const GLvoid *data)
+luaglew_glCompressedTexSubImage1D(lua_State *L) {
+	glCompressedTexSubImage1D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checklong(L, 4), luaglew_enum(L, 5), luaL_checklong(L, 6), **********CHYBA POINTER (const GLvoid *data) NEBINDOVAT************);
+	return 0;
+}
+// void glCompressedTexSubImage2D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const GLvoid *data)
+luaglew_glCompressedTexSubImage2D(lua_State *L) {
+	glCompressedTexSubImage2D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checklong(L, 5), luaL_checklong(L, 6), luaglew_enum(L, 7), luaL_checklong(L, 8), **********CHYBA POINTER (const GLvoid *data) NEBINDOVAT************);
+	return 0;
+}
+// void glCompressedTexSubImage3D (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoiluaglew_glCompressedTexSubImage3D(lua_State *L) {
+	glCompressedTexSubImage3D(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5), luaL_checklong(L, 6), luaL_checklong(L, 7), luaL_checklong(L, 8), luaglew_enum(L, 9), luaL_checklong(L, 10), **********CHYBA (const GLvoi) NEBINDOVAT************);
+	return 0;
+}
+// void glGetCompressedTexImage (GLenum target, GLint lod, GLvoid *img)
+luaglew_glGetCompressedTexImage(lua_State *L) {
+	glGetCompressedTexImage(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLvoid *img) NEBINDOVAT************);
+	return 0;
+}
+// void glLoadTransposeMatrixd (const GLdouble m[16])
+luaglew_glLoadTransposeMatrixd(lua_State *L) {
+	glLoadTransposeMatrixd((GLdouble)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glLoadTransposeMatrixf (const GLfloat m[16])
+luaglew_glLoadTransposeMatrixf(lua_State *L) {
+	glLoadTransposeMatrixf((GLfloat)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glMultTransposeMatrixd (const GLdouble m[16])
+luaglew_glMultTransposeMatrixd(lua_State *L) {
+	glMultTransposeMatrixd((GLdouble)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glMultTransposeMatrixf (const GLfloat m[16])
+luaglew_glMultTransposeMatrixf(lua_State *L) {
+	glMultTransposeMatrixf((GLfloat)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glMultiTexCoord1d (GLenum target, GLdouble s)
+luaglew_glMultiTexCoord1d(lua_State *L) {
+	glMultiTexCoord1d(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1dv (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord1dv(lua_State *L) {
+	glMultiTexCoord1dv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord1f (GLenum target, GLfloat s)
+luaglew_glMultiTexCoord1f(lua_State *L) {
+	glMultiTexCoord1f(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1fv (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord1fv(lua_State *L) {
+	glMultiTexCoord1fv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord1i (GLenum target, GLint s)
+luaglew_glMultiTexCoord1i(lua_State *L) {
+	glMultiTexCoord1i(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1iv (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord1iv(lua_State *L) {
+	glMultiTexCoord1iv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord1s (GLenum target, GLshort s)
+luaglew_glMultiTexCoord1s(lua_State *L) {
+	glMultiTexCoord1s(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2));
+	return 0;
+}
+// void glMultiTexCoord1sv (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord1sv(lua_State *L) {
+	glMultiTexCoord1sv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2d (GLenum target, GLdouble s, GLdouble t)
+luaglew_glMultiTexCoord2d(lua_State *L) {
+	glMultiTexCoord2d(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2dv (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord2dv(lua_State *L) {
+	glMultiTexCoord2dv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2f (GLenum target, GLfloat s, GLfloat t)
+luaglew_glMultiTexCoord2f(lua_State *L) {
+	glMultiTexCoord2f(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2fv (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord2fv(lua_State *L) {
+	glMultiTexCoord2fv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2i (GLenum target, GLint s, GLint t)
+luaglew_glMultiTexCoord2i(lua_State *L) {
+	glMultiTexCoord2i(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2iv (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord2iv(lua_State *L) {
+	glMultiTexCoord2iv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord2s (GLenum target, GLshort s, GLshort t)
+luaglew_glMultiTexCoord2s(lua_State *L) {
+	glMultiTexCoord2s(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glMultiTexCoord2sv (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord2sv(lua_State *L) {
+	glMultiTexCoord2sv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3d (GLenum target, GLdouble s, GLdouble t, GLdouble r)
+luaglew_glMultiTexCoord3d(lua_State *L) {
+	glMultiTexCoord3d(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3dv (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord3dv(lua_State *L) {
+	glMultiTexCoord3dv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3f (GLenum target, GLfloat s, GLfloat t, GLfloat r)
+luaglew_glMultiTexCoord3f(lua_State *L) {
+	glMultiTexCoord3f(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3fv (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord3fv(lua_State *L) {
+	glMultiTexCoord3fv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3i (GLenum target, GLint s, GLint t, GLint r)
+luaglew_glMultiTexCoord3i(lua_State *L) {
+	glMultiTexCoord3i(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3iv (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord3iv(lua_State *L) {
+	glMultiTexCoord3iv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord3s (GLenum target, GLshort s, GLshort t, GLshort r)
+luaglew_glMultiTexCoord3s(lua_State *L) {
+	glMultiTexCoord3s(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4));
+	return 0;
+}
+// void glMultiTexCoord3sv (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord3sv(lua_State *L) {
+	glMultiTexCoord3sv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4d (GLenum target, GLdouble s, GLdouble t, GLdouble r, GLdouble q)
+luaglew_glMultiTexCoord4d(lua_State *L) {
+	glMultiTexCoord4d(luaglew_enum(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4), (GLdouble)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4dv (GLenum target, const GLdouble *v)
+luaglew_glMultiTexCoord4dv(lua_State *L) {
+	glMultiTexCoord4dv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4f (GLenum target, GLfloat s, GLfloat t, GLfloat r, GLfloat q)
+luaglew_glMultiTexCoord4f(lua_State *L) {
+	glMultiTexCoord4f(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4), (GLfloat)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4fv (GLenum target, const GLfloat *v)
+luaglew_glMultiTexCoord4fv(lua_State *L) {
+	glMultiTexCoord4fv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4i (GLenum target, GLint s, GLint t, GLint r, GLint q)
+luaglew_glMultiTexCoord4i(lua_State *L) {
+	glMultiTexCoord4i(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4iv (GLenum target, const GLint *v)
+luaglew_glMultiTexCoord4iv(lua_State *L) {
+	glMultiTexCoord4iv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiTexCoord4s (GLenum target, GLshort s, GLshort t, GLshort r, GLshort q)
+luaglew_glMultiTexCoord4s(lua_State *L) {
+	glMultiTexCoord4s(luaglew_enum(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4), (GLshort)luaL_checkinteger(L, 5));
+	return 0;
+}
+// void glMultiTexCoord4sv (GLenum target, const GLshort *v)
+luaglew_glMultiTexCoord4sv(lua_State *L) {
+	glMultiTexCoord4sv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSampleCoverage (GLclampf value, GLboolean invert)
+luaglew_glSampleCoverage(lua_State *L) {
+	glSampleCoverage((GLclampf)luaL_checknumber(L, 1), **********CHYBA (GLboolean invert) NEBINDOVAT************);
+	return 0;
+}
+// void glBlendEquation (GLenum mode)
+luaglew_glBlendEquation(lua_State *L) {
+	glBlendEquation(luaglew_enum(L, 1));
+	return 0;
+}
+// void glBlendColor (GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha)
+luaglew_glBlendColor(lua_State *L) {
+	glBlendColor((GLclampf)luaL_checknumber(L, 1), (GLclampf)luaL_checknumber(L, 2), (GLclampf)luaL_checknumber(L, 3), (GLclampf)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glFogCoordf (GLfloat coord)
+luaglew_glFogCoordf(lua_State *L) {
+	glFogCoordf((GLfloat)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glFogCoordfv (const GLfloat *coord)
+luaglew_glFogCoordfv(lua_State *L) {
+	glFogCoordfv(**********CHYBA POINTER (const GLfloat *coord) NEBINDOVAT************);
+	return 0;
+}
+// void glFogCoordd (GLdouble coord)
+luaglew_glFogCoordd(lua_State *L) {
+	glFogCoordd((GLdouble)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glFogCoorddv (const GLdouble *coord)
+luaglew_glFogCoorddv(lua_State *L) {
+	glFogCoorddv(**********CHYBA POINTER (const GLdouble *coord) NEBINDOVAT************);
+	return 0;
+}
+// void glFogCoordPointer (GLenum type, GLsizei stride, const GLvoid *pointer)
+luaglew_glFogCoordPointer(lua_State *L) {
+	glFogCoordPointer(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glMultiDrawArrays (GLenum mode, GLint *first, GLsizei *count, GLsizei primcount)
+luaglew_glMultiDrawArrays(lua_State *L) {
+	glMultiDrawArrays(luaglew_enum(L, 1), **********CHYBA POINTER (GLint *first) NEBINDOVAT************, **********CHYBA POINTER (GLsizei *count) NEBINDOVAT************, luaL_checklong(L, 4)
+
+// void glMultiDrawElements (GLenum mode, GLsizei *count, GLenum type, const GLvoid **indices, GLsizei primcount)
+luaglew_glMultiDrawElements(lua_State *L) {
+	glMultiDrawElements(luaglew_enum(L, 1), **********CHYBA POINTER (GLsizei *count) NEBINDOVAT************, luaglew_enum(L, 3), **********CHYBA POINTER (const GLvoid **indices) NEBINDOVAT************, luaL_checklong(L, 5)
+
+// void glPointParameteri (GLenum pname, GLint param)
+luaglew_glPointParameteri(lua_State *L) {
+	glPointParameteri(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glPointParameteriv (GLenum pname, const GLint *params)
+luaglew_glPointParameteriv(lua_State *L) {
+	glPointParameteriv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLint *params) NEBINDOVAT************);
+	return 0;
+}
+// void glPointParameterf (GLenum pname, GLfloat param)
+luaglew_glPointParameterf(lua_State *L) {
+	glPointParameterf(luaglew_enum(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glPointParameterfv (GLenum pname, const GLfloat *params)
+luaglew_glPointParameterfv(lua_State *L) {
+	glPointParameterfv(luaglew_enum(L, 1), **********CHYBA POINTER (const GLfloat *params) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3b (GLbyte red, GLbyte green, GLbyte blue)
+luaglew_glSecondaryColor3b(lua_State *L) {
+	glSecondaryColor3b(**********CHYBA (GLbyte red) NEBINDOVAT************, **********CHYBA (GLbyte green) NEBINDOVAT************, **********CHYBA (GLbyte blue) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3bv (const GLbyte *v)
+luaglew_glSecondaryColor3bv(lua_State *L) {
+	glSecondaryColor3bv(**********CHYBA POINTER (const GLbyte *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3d (GLdouble red, GLdouble green, GLdouble blue)
+luaglew_glSecondaryColor3d(lua_State *L) {
+	glSecondaryColor3d((GLdouble)luaL_checknumber(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glSecondaryColor3dv (const GLdouble *v)
+luaglew_glSecondaryColor3dv(lua_State *L) {
+	glSecondaryColor3dv(**********CHYBA POINTER (const GLdouble *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3f (GLfloat red, GLfloat green, GLfloat blue)
+luaglew_glSecondaryColor3f(lua_State *L) {
+	glSecondaryColor3f((GLfloat)luaL_checknumber(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glSecondaryColor3fv (const GLfloat *v)
+luaglew_glSecondaryColor3fv(lua_State *L) {
+	glSecondaryColor3fv(**********CHYBA POINTER (const GLfloat *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3i (GLint red, GLint green, GLint blue)
+luaglew_glSecondaryColor3i(lua_State *L) {
+	glSecondaryColor3i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glSecondaryColor3iv (const GLint *v)
+luaglew_glSecondaryColor3iv(lua_State *L) {
+	glSecondaryColor3iv(**********CHYBA POINTER (const GLint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3s (GLshort red, GLshort green, GLshort blue)
+luaglew_glSecondaryColor3s(lua_State *L) {
+	glSecondaryColor3s((GLshort)luaL_checkinteger(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glSecondaryColor3sv (const GLshort *v)
+luaglew_glSecondaryColor3sv(lua_State *L) {
+	glSecondaryColor3sv(**********CHYBA POINTER (const GLshort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3ub (GLubyte red, GLubyte green, GLubyte blue)
+luaglew_glSecondaryColor3ub(lua_State *L) {
+	glSecondaryColor3ub(**********CHYBA (GLubyte red) NEBINDOVAT************, **********CHYBA (GLubyte green) NEBINDOVAT************, **********CHYBA (GLubyte blue) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3ubv (const GLubyte *v)
+luaglew_glSecondaryColor3ubv(lua_State *L) {
+	glSecondaryColor3ubv(**********CHYBA POINTER (const GLubyte *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3ui (GLuint red, GLuint green, GLuint blue)
+luaglew_glSecondaryColor3ui(lua_State *L) {
+	glSecondaryColor3ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glSecondaryColor3uiv (const GLuint *v)
+luaglew_glSecondaryColor3uiv(lua_State *L) {
+	glSecondaryColor3uiv(**********CHYBA POINTER (const GLuint *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColor3us (GLushort red, GLushort green, GLushort blue)
+luaglew_glSecondaryColor3us(lua_State *L) {
+	glSecondaryColor3us((GLushort)luaL_checkinteger(L, 1), (GLushort)luaL_checkinteger(L, 2), (GLushort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glSecondaryColor3usv (const GLushort *v)
+luaglew_glSecondaryColor3usv(lua_State *L) {
+	glSecondaryColor3usv(**********CHYBA POINTER (const GLushort *v) NEBINDOVAT************);
+	return 0;
+}
+// void glSecondaryColorPointer (GLint size, GLenum type, GLsizei stride, GLvoid *pointer)
+luaglew_glSecondaryColorPointer(lua_State *L) {
+	glSecondaryColorPointer(luaL_checkint(L, 1), luaglew_enum(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLvoid *pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glBlendFuncSeparate (GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha)
+luaglew_glBlendFuncSeparate(lua_State *L) {
+	glBlendFuncSeparate(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaglew_enum(L, 4));
+	return 0;
+}
+// void glWindowPos2d (GLdouble x, GLdouble y)
+luaglew_glWindowPos2d(lua_State *L) {
+	glWindowPos2d((GLdouble)luaL_checknumber(L, 1), (GLdouble)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glWindowPos2f (GLfloat x, GLfloat y)
+luaglew_glWindowPos2f(lua_State *L) {
+	glWindowPos2f((GLfloat)luaL_checknumber(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glWindowPos2i (GLint x, GLint y)
+luaglew_glWindowPos2i(lua_State *L) {
+	glWindowPos2i(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glWindowPos2s (GLshort x, GLshort y)
+luaglew_glWindowPos2s(lua_State *L) {
+	glWindowPos2s((GLshort)luaL_checkinteger(L, 1), (GLshort)luaL_checkinteger(L, 2));
+	return 0;
+}
+// void glWindowPos2dv (const GLdouble *p)
+luaglew_glWindowPos2dv(lua_State *L) {
+	glWindowPos2dv(**********CHYBA POINTER (const GLdouble *p) NEBINDOVAT************);
+	return 0;
+}
+// void glWindowPos2fv (const GLfloat *p)
+luaglew_glWindowPos2fv(lua_State *L) {
+	glWindowPos2fv(**********CHYBA POINTER (const GLfloat *p) NEBINDOVAT************);
+	return 0;
+}
+// void glWindowPos2iv (const GLint *p)
+luaglew_glWindowPos2iv(lua_State *L) {
+	glWindowPos2iv(**********CHYBA POINTER (const GLint *p) NEBINDOVAT************);
+	return 0;
+}
+// void glWindowPos2sv (const GLshort *p)
+luaglew_glWindowPos2sv(lua_State *L) {
+	glWindowPos2sv(**********CHYBA POINTER (const GLshort *p) NEBINDOVAT************);
+	return 0;
+}
+// void glWindowPos3d (GLdouble x, GLdouble y, GLdouble z)
+luaglew_glWindowPos3d(lua_State *L) {
+	glWindowPos3d((GLdouble)luaL_checknumber(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glWindowPos3f (GLfloat x, GLfloat y, GLfloat z)
+luaglew_glWindowPos3f(lua_State *L) {
+	glWindowPos3f((GLfloat)luaL_checknumber(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glWindowPos3i (GLint x, GLint y, GLint z)
+luaglew_glWindowPos3i(lua_State *L) {
+	glWindowPos3i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glWindowPos3s (GLshort x, GLshort y, GLshort z)
+luaglew_glWindowPos3s(lua_State *L) {
+	glWindowPos3s((GLshort)luaL_checkinteger(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glWindowPos3dv (const GLdouble *p)
+luaglew_glWindowPos3dv(lua_State *L) {
+	glWindowPos3dv(**********CHYBA POINTER (const GLdouble *p) NEBINDOVAT************);
+	return 0;
+}
+// void glWindowPos3fv (const GLfloat *p)
+luaglew_glWindowPos3fv(lua_State *L) {
+	glWindowPos3fv(**********CHYBA POINTER (const GLfloat *p) NEBINDOVAT************);
+	return 0;
+}
+// void glWindowPos3iv (const GLint *p)
+luaglew_glWindowPos3iv(lua_State *L) {
+	glWindowPos3iv(**********CHYBA POINTER (const GLint *p) NEBINDOVAT************);
+	return 0;
+}
+// void glWindowPos3sv (const GLshort *p)
+luaglew_glWindowPos3sv(lua_State *L) {
+	glWindowPos3sv(**********CHYBA POINTER (const GLshort *p) NEBINDOVAT************);
+	return 0;
+}
+// void glGenQueries (GLsizei n, GLuint* ids)
+luaglew_glGenQueries(lua_State *L) {
+	glGenQueries(luaL_checklong(L, 1), **********CHYBA POINTER (GLuint* ids) NEBINDOVAT************);
+	return 0;
+}
+// void glDeleteQueries (GLsizei n, const GLuint* ids)
+luaglew_glDeleteQueries(lua_State *L) {
+	glDeleteQueries(luaL_checklong(L, 1), **********CHYBA POINTER (const GLuint* ids) NEBINDOVAT************);
+	return 0;
+}
+// GLboolean glIsQuery (GLuint id)
+luaglew_glIsQuery(lua_State *L) {
+	glIsQuery(luaL_checkint(L, 1));
+	return 0;
+}
+// void glBeginQuery (GLenum target, GLuint id)
+luaglew_glBeginQuery(lua_State *L) {
+	glBeginQuery(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glEndQuery (GLenum target)
+luaglew_glEndQuery(lua_State *L) {
+	glEndQuery(luaglew_enum(L, 1));
+	return 0;
+}
+// void glGetQueryiv (GLenum target, GLenum pname, GLint* params)
+luaglew_glGetQueryiv(lua_State *L) {
+	glGetQueryiv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetQueryObjectiv (GLuint id, GLenum pname, GLint* params)
+luaglew_glGetQueryObjectiv(lua_State *L) {
+	glGetQueryObjectiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetQueryObjectuiv (GLuint id, GLenum pname, GLuint* params)
+luaglew_glGetQueryObjectuiv(lua_State *L) {
+	glGetQueryObjectuiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glBindBuffer (GLenum target, GLuint buffer)
+luaglew_glBindBuffer(lua_State *L) {
+	glBindBuffer(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glDeleteBuffers (GLsizei n, const GLuint* buffers)
+luaglew_glDeleteBuffers(lua_State *L) {
+	glDeleteBuffers(luaL_checklong(L, 1), **********CHYBA POINTER (const GLuint* buffers) NEBINDOVAT************);
+	return 0;
+}
+// void glGenBuffers (GLsizei n, GLuint* buffers)
+luaglew_glGenBuffers(lua_State *L) {
+	glGenBuffers(luaL_checklong(L, 1), **********CHYBA POINTER (GLuint* buffers) NEBINDOVAT************);
+	return 0;
+}
+// GLboolean glIsBuffer (GLuint buffer)
+luaglew_glIsBuffer(lua_State *L) {
+	glIsBuffer(luaL_checkint(L, 1));
+	return 0;
+}
+// void glBufferData (GLenum target, GLsizeiptr size, const GLvoid* data, GLenum usage)
+luaglew_glBufferData(lua_State *L) {
+	glBufferData(luaglew_enum(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLvoid* data) NEBINDOVAT************, luaglew_enum(L, 4));
+	return 0;
+}
+// void glBufferSubData (GLenum target, GLintptr offset, GLsizeiptr size, const GLvoid* data)
+luaglew_glBufferSubData(lua_State *L) {
+	glBufferSubData(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (const GLvoid* data) NEBINDOVAT************);
+	return 0;
+}
+// void glGetBufferSubData (GLenum target, GLintptr offset, GLsizeiptr size, GLvoid* data)
+luaglew_glGetBufferSubData(lua_State *L) {
+	glGetBufferSubData(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLvoid* data) NEBINDOVAT************);
+	return 0;
+}
+// GLvoid* glMapBuffer (GLenum target, GLenum access)
+luaglew_glMapBuffer(lua_State *L) {
+	glMapBuffer(luaglew_enum(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// GLboolean glUnmapBuffer (GLenum target)
+luaglew_glUnmapBuffer(lua_State *L) {
+	glUnmapBuffer(luaglew_enum(L, 1));
+	return 0;
+}
+// void glGetBufferParameteriv (GLenum target, GLenum pname, GLint* params)
+luaglew_glGetBufferParameteriv(lua_State *L) {
+	glGetBufferParameteriv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetBufferPointerv (GLenum target, GLenum pname, GLvoid** params)
+luaglew_glGetBufferPointerv(lua_State *L) {
+	glGetBufferPointerv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLvoid** params) NEBINDOVAT************);
+	return 0;
+}
+// void glBlendEquationSeparate (GLenum, GLenum)
+luaglew_glBlendEquationSeparate(lua_State *L) {
+	glBlendEquationSeparate(luaglew_enum(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// void glDrawBuffers (GLsizei n, const GLenum* bufs)
+luaglew_glDrawBuffers(lua_State *L) {
+	glDrawBuffers(luaL_checklong(L, 1), **********CHYBA POINTER (const GLenum* bufs) NEBINDOVAT************);
+	return 0;
+}
+// void glStencilOpSeparate (GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass)
+luaglew_glStencilOpSeparate(lua_State *L) {
+	glStencilOpSeparate(luaglew_enum(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaglew_enum(L, 4));
+	return 0;
+}
+// void glStencilFuncSeparate (GLenum frontfunc, GLenum backfunc, GLint ref, GLuint mask)
+luaglew_glStencilFuncSeparate(lua_State *L) {
+	glStencilFuncSeparate(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glStencilMaskSeparate (GLenum, GLuint)
+luaglew_glStencilMaskSeparate(lua_State *L) {
+	glStencilMaskSeparate(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glAttachShader (GLuint program, GLuint shader)
+luaglew_glAttachShader(lua_State *L) {
+	glAttachShader(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glBindAttribLocation (GLuint program, GLuint index, const GLchar* name)
+luaglew_glBindAttribLocation(lua_State *L) {
+	glBindAttribLocation(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLchar* name) NEBINDOVAT************);
+	return 0;
+}
+// void glCompileShader (GLuint shader)
+luaglew_glCompileShader(lua_State *L) {
+	glCompileShader(luaL_checkint(L, 1));
+	return 0;
+}
+// GLuint glCreateProgram (void)
+luaglew_glCreateProgram(lua_State *L) {
+	glCreateProgram(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// GLuint glCreateShader (GLenum type)
+luaglew_glCreateShader(lua_State *L) {
+	glCreateShader(luaglew_enum(L, 1));
+	return 0;
+}
+// void glDeleteProgram (GLuint program)
+luaglew_glDeleteProgram(lua_State *L) {
+	glDeleteProgram(luaL_checkint(L, 1));
+	return 0;
+}
+// void glDeleteShader (GLuint shader)
+luaglew_glDeleteShader(lua_State *L) {
+	glDeleteShader(luaL_checkint(L, 1));
+	return 0;
+}
+// void glDetachShader (GLuint program, GLuint shader)
+luaglew_glDetachShader(lua_State *L) {
+	glDetachShader(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glDisableVertexAttribArray (GLuint)
+luaglew_glDisableVertexAttribArray(lua_State *L) {
+	glDisableVertexAttribArray(luaL_checkint(L, 1));
+	return 0;
+}
+// void glEnableVertexAttribArray (GLuint)
+luaglew_glEnableVertexAttribArray(lua_State *L) {
+	glEnableVertexAttribArray(luaL_checkint(L, 1));
+	return 0;
+}
+// void glGetActiveAttrib (GLuint program, GLuint index, GLsizei maxLength, GLsizei* length, GLint* size, GLenum* type, GLchar* name)
+luaglew_glGetActiveAttrib(lua_State *L) {
+	glGetActiveAttrib(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLsizei* length) NEBINDOVAT************, **********CHYBA POINTER (GLint* size) NEBINDOVAT************, **********CHYBA POINTER (GLenum* type) NEBINDOVAT************, **********CHYBA POINTER (GLchar* name) NEBINDOVAT************);
+	return 0;
+}
+// void glGetActiveUniform (GLuint program, GLuint index, GLsizei maxLength, GLsizei* length, GLint* size, GLenum* type, GLchar* name)
+luaglew_glGetActiveUniform(lua_State *L) {
+	glGetActiveUniform(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), **********CHYBA POINTER (GLsizei* length) NEBINDOVAT************, **********CHYBA POINTER (GLint* size) NEBINDOVAT************, **********CHYBA POINTER (GLenum* type) NEBINDOVAT************, **********CHYBA POINTER (GLchar* name) NEBINDOVAT************);
+	return 0;
+}
+// void glGetAttachedShaders (GLuint program, GLsizei maxCount, GLsizei* count, GLuint* shaders)
+luaglew_glGetAttachedShaders(lua_State *L) {
+	glGetAttachedShaders(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLsizei* count) NEBINDOVAT************, **********CHYBA POINTER (GLuint* shaders) NEBINDOVAT************);
+	return 0;
+}
+// GLint glGetAttribLocation (GLuint program, const GLchar* name)
+luaglew_glGetAttribLocation(lua_State *L) {
+	glGetAttribLocation(luaL_checkint(L, 1), **********CHYBA POINTER (const GLchar* name) NEBINDOVAT************);
+	return 0;
+}
+// void glGetProgramiv (GLuint program, GLenum pname, GLint* param)
+luaglew_glGetProgramiv(lua_State *L) {
+	glGetProgramiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint* param) NEBINDOVAT************);
+	return 0;
+}
+// void glGetProgramInfoLog (GLuint program, GLsizei bufSize, GLsizei* length, GLchar* infoLog)
+luaglew_glGetProgramInfoLog(lua_State *L) {
+	glGetProgramInfoLog(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLsizei* length) NEBINDOVAT************, **********CHYBA POINTER (GLchar* infoLog) NEBINDOVAT************);
+	return 0;
+}
+// void glGetShaderiv (GLuint shader, GLenum pname, GLint* param)
+luaglew_glGetShaderiv(lua_State *L) {
+	glGetShaderiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint* param) NEBINDOVAT************);
+	return 0;
+}
+// void glGetShaderInfoLog (GLuint shader, GLsizei bufSize, GLsizei* length, GLchar* infoLog)
+luaglew_glGetShaderInfoLog(lua_State *L) {
+	glGetShaderInfoLog(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLsizei* length) NEBINDOVAT************, **********CHYBA POINTER (GLchar* infoLog) NEBINDOVAT************);
+	return 0;
+}
+// void glShaderSource (GLuint shader, GLsizei count, const GLchar** strings, const GLint* lengths)
+luaglew_glShaderSource(lua_State *L) {
+	glShaderSource(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLchar** strings) NEBINDOVAT************, **********CHYBA POINTER (const GLint* lengths) NEBINDOVAT************);
+	return 0;
+}
+// GLint glGetUniformLocation (GLuint program, const GLchar* name)
+luaglew_glGetUniformLocation(lua_State *L) {
+	glGetUniformLocation(luaL_checkint(L, 1), **********CHYBA POINTER (const GLchar* name) NEBINDOVAT************);
+	return 0;
+}
+// void glGetUniformfv (GLuint program, GLint location, GLfloat* params)
+luaglew_glGetUniformfv(lua_State *L) {
+	glGetUniformfv(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLfloat* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetUniformiv (GLuint program, GLint location, GLint* params)
+luaglew_glGetUniformiv(lua_State *L) {
+	glGetUniformiv(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLint* params) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribdv (GLuint, GLenum, GLdouble*)
+luaglew_glGetVertexAttribdv(lua_State *L) {
+	glGetVertexAttribdv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLdouble*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribfv (GLuint, GLenum, GLfloat*)
+luaglew_glGetVertexAttribfv(lua_State *L) {
+	glGetVertexAttribfv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLfloat*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribiv (GLuint, GLenum, GLint*)
+luaglew_glGetVertexAttribiv(lua_State *L) {
+	glGetVertexAttribiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribPointerv (GLuint, GLenum, GLvoid*)
+luaglew_glGetVertexAttribPointerv(lua_State *L) {
+	glGetVertexAttribPointerv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLvoid*) NEBINDOVAT************);
+	return 0;
+}
+// GLboolean glIsProgram (GLuint program)
+luaglew_glIsProgram(lua_State *L) {
+	glIsProgram(luaL_checkint(L, 1));
+	return 0;
+}
+// GLboolean glIsShader (GLuint shader)
+luaglew_glIsShader(lua_State *L) {
+	glIsShader(luaL_checkint(L, 1));
+	return 0;
+}
+// void glLinkProgram (GLuint program)
+luaglew_glLinkProgram(lua_State *L) {
+	glLinkProgram(luaL_checkint(L, 1));
+	return 0;
+}
+// void glGetShaderSource (GLint obj, GLsizei maxLength, GLsizei* length, GLchar* source)
+luaglew_glGetShaderSource(lua_State *L) {
+	glGetShaderSource(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (GLsizei* length) NEBINDOVAT************, **********CHYBA POINTER (GLchar* source) NEBINDOVAT************);
+	return 0;
+}
+// void glUseProgram (GLuint program)
+luaglew_glUseProgram(lua_State *L) {
+	glUseProgram(luaL_checkint(L, 1));
+	return 0;
+}
+// void glUniform1f (GLint location, GLfloat v0)
+luaglew_glUniform1f(lua_State *L) {
+	glUniform1f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glUniform1fv (GLint location, GLsizei count, const GLfloat* value)
+luaglew_glUniform1fv(lua_State *L) {
+	glUniform1fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform1i (GLint location, GLint v0)
+luaglew_glUniform1i(lua_State *L) {
+	glUniform1i(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glUniform1iv (GLint location, GLsizei count, const GLint* value)
+luaglew_glUniform1iv(lua_State *L) {
+	glUniform1iv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform2f (GLint location, GLfloat v0, GLfloat v1)
+luaglew_glUniform2f(lua_State *L) {
+	glUniform2f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glUniform2fv (GLint location, GLsizei count, const GLfloat* value)
+luaglew_glUniform2fv(lua_State *L) {
+	glUniform2fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform2i (GLint location, GLint v0, GLint v1)
+luaglew_glUniform2i(lua_State *L) {
+	glUniform2i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glUniform2iv (GLint location, GLsizei count, const GLint* value)
+luaglew_glUniform2iv(lua_State *L) {
+	glUniform2iv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform3f (GLint location, GLfloat v0, GLfloat v1, GLfloat v2)
+luaglew_glUniform3f(lua_State *L) {
+	glUniform3f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glUniform3fv (GLint location, GLsizei count, const GLfloat* value)
+luaglew_glUniform3fv(lua_State *L) {
+	glUniform3fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform3i (GLint location, GLint v0, GLint v1, GLint v2)
+luaglew_glUniform3i(lua_State *L) {
+	glUniform3i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glUniform3iv (GLint location, GLsizei count, const GLint* value)
+luaglew_glUniform3iv(lua_State *L) {
+	glUniform3iv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform4f (GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3)
+luaglew_glUniform4f(lua_State *L) {
+	glUniform4f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4), (GLfloat)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glUniform4fv (GLint location, GLsizei count, const GLfloat* value)
+luaglew_glUniform4fv(lua_State *L) {
+	glUniform4fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform4i (GLint location, GLint v0, GLint v1, GLint v2, GLint v3)
+luaglew_glUniform4i(lua_State *L) {
+	glUniform4i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glUniform4iv (GLint location, GLsizei count, const GLint* value)
+luaglew_glUniform4iv(lua_State *L) {
+	glUniform4iv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLint* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glUniformMatrix2fv(lua_State *L) {
+	glUniformMatrix2fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glUniformMatrix3fv(lua_State *L) {
+	glUniformMatrix3fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value)
+luaglew_glUniformMatrix4fv(lua_State *L) {
+	glUniformMatrix4fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat* value) NEBINDOVAT************);
+	return 0;
+}
+// void glValidateProgram (GLuint program)
+luaglew_glValidateProgram(lua_State *L) {
+	glValidateProgram(luaL_checkint(L, 1));
+	return 0;
+}
+// void glVertexAttrib1d (GLuint index, GLdouble x)
+luaglew_glVertexAttrib1d(lua_State *L) {
+	glVertexAttrib1d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glVertexAttrib1dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttrib1dv(lua_State *L) {
+	glVertexAttrib1dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib1f (GLuint index, GLfloat x)
+luaglew_glVertexAttrib1f(lua_State *L) {
+	glVertexAttrib1f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2));
+	return 0;
+}
+// void glVertexAttrib1fv (GLuint index, const GLfloat* v)
+luaglew_glVertexAttrib1fv(lua_State *L) {
+	glVertexAttrib1fv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLfloat* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib1s (GLuint index, GLshort x)
+luaglew_glVertexAttrib1s(lua_State *L) {
+	glVertexAttrib1s(luaL_checkint(L, 1), (GLshort)luaL_checkinteger(L, 2));
+	return 0;
+}
+// void glVertexAttrib1sv (GLuint index, const GLshort* v)
+luaglew_glVertexAttrib1sv(lua_State *L) {
+	glVertexAttrib1sv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLshort* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib2d (GLuint index, GLdouble x, GLdouble y)
+luaglew_glVertexAttrib2d(lua_State *L) {
+	glVertexAttrib2d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glVertexAttrib2dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttrib2dv(lua_State *L) {
+	glVertexAttrib2dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib2f (GLuint index, GLfloat x, GLfloat y)
+luaglew_glVertexAttrib2f(lua_State *L) {
+	glVertexAttrib2f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3));
+	return 0;
+}
+// void glVertexAttrib2fv (GLuint index, const GLfloat* v)
+luaglew_glVertexAttrib2fv(lua_State *L) {
+	glVertexAttrib2fv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLfloat* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib2s (GLuint index, GLshort x, GLshort y)
+luaglew_glVertexAttrib2s(lua_State *L) {
+	glVertexAttrib2s(luaL_checkint(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3));
+	return 0;
+}
+// void glVertexAttrib2sv (GLuint index, const GLshort* v)
+luaglew_glVertexAttrib2sv(lua_State *L) {
+	glVertexAttrib2sv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLshort* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib3d (GLuint index, GLdouble x, GLdouble y, GLdouble z)
+luaglew_glVertexAttrib3d(lua_State *L) {
+	glVertexAttrib3d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glVertexAttrib3dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttrib3dv(lua_State *L) {
+	glVertexAttrib3dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib3f (GLuint index, GLfloat x, GLfloat y, GLfloat z)
+luaglew_glVertexAttrib3f(lua_State *L) {
+	glVertexAttrib3f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4));
+	return 0;
+}
+// void glVertexAttrib3fv (GLuint index, const GLfloat* v)
+luaglew_glVertexAttrib3fv(lua_State *L) {
+	glVertexAttrib3fv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLfloat* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib3s (GLuint index, GLshort x, GLshort y, GLshort z)
+luaglew_glVertexAttrib3s(lua_State *L) {
+	glVertexAttrib3s(luaL_checkint(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4));
+	return 0;
+}
+// void glVertexAttrib3sv (GLuint index, const GLshort* v)
+luaglew_glVertexAttrib3sv(lua_State *L) {
+	glVertexAttrib3sv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLshort* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4Nbv (GLuint index, const GLbyte* v)
+luaglew_glVertexAttrib4Nbv(lua_State *L) {
+	glVertexAttrib4Nbv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLbyte* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4Niv (GLuint index, const GLint* v)
+luaglew_glVertexAttrib4Niv(lua_State *L) {
+	glVertexAttrib4Niv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4Nsv (GLuint index, const GLshort* v)
+luaglew_glVertexAttrib4Nsv(lua_State *L) {
+	glVertexAttrib4Nsv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLshort* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4Nub (GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w)
+luaglew_glVertexAttrib4Nub(lua_State *L) {
+	glVertexAttrib4Nub(luaL_checkint(L, 1), **********CHYBA (GLubyte x) NEBINDOVAT************, **********CHYBA (GLubyte y) NEBINDOVAT************, **********CHYBA (GLubyte z) NEBINDOVAT************, **********CHYBA (GLubyte w) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4Nubv (GLuint index, const GLubyte* v)
+luaglew_glVertexAttrib4Nubv(lua_State *L) {
+	glVertexAttrib4Nubv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLubyte* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4Nuiv (GLuint index, const GLuint* v)
+luaglew_glVertexAttrib4Nuiv(lua_State *L) {
+	glVertexAttrib4Nuiv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4Nusv (GLuint index, const GLushort* v)
+luaglew_glVertexAttrib4Nusv(lua_State *L) {
+	glVertexAttrib4Nusv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLushort* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4bv (GLuint index, const GLbyte* v)
+luaglew_glVertexAttrib4bv(lua_State *L) {
+	glVertexAttrib4bv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLbyte* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4d (GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)
+luaglew_glVertexAttrib4d(lua_State *L) {
+	glVertexAttrib4d(luaL_checkint(L, 1), (GLdouble)luaL_checknumber(L, 2), (GLdouble)luaL_checknumber(L, 3), (GLdouble)luaL_checknumber(L, 4), (GLdouble)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glVertexAttrib4dv (GLuint index, const GLdouble* v)
+luaglew_glVertexAttrib4dv(lua_State *L) {
+	glVertexAttrib4dv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLdouble* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4f (GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w)
+luaglew_glVertexAttrib4f(lua_State *L) {
+	glVertexAttrib4f(luaL_checkint(L, 1), (GLfloat)luaL_checknumber(L, 2), (GLfloat)luaL_checknumber(L, 3), (GLfloat)luaL_checknumber(L, 4), (GLfloat)luaL_checknumber(L, 5));
+	return 0;
+}
+// void glVertexAttrib4fv (GLuint index, const GLfloat* v)
+luaglew_glVertexAttrib4fv(lua_State *L) {
+	glVertexAttrib4fv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLfloat* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4iv (GLuint index, const GLint* v)
+luaglew_glVertexAttrib4iv(lua_State *L) {
+	glVertexAttrib4iv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4s (GLuint index, GLshort x, GLshort y, GLshort z, GLshort w)
+luaglew_glVertexAttrib4s(lua_State *L) {
+	glVertexAttrib4s(luaL_checkint(L, 1), (GLshort)luaL_checkinteger(L, 2), (GLshort)luaL_checkinteger(L, 3), (GLshort)luaL_checkinteger(L, 4), (GLshort)luaL_checkinteger(L, 5));
+	return 0;
+}
+// void glVertexAttrib4sv (GLuint index, const GLshort* v)
+luaglew_glVertexAttrib4sv(lua_State *L) {
+	glVertexAttrib4sv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLshort* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4ubv (GLuint index, const GLubyte* v)
+luaglew_glVertexAttrib4ubv(lua_State *L) {
+	glVertexAttrib4ubv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLubyte* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4uiv (GLuint index, const GLuint* v)
+luaglew_glVertexAttrib4uiv(lua_State *L) {
+	glVertexAttrib4uiv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttrib4usv (GLuint index, const GLushort* v)
+luaglew_glVertexAttrib4usv(lua_State *L) {
+	glVertexAttrib4usv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLushort* v) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribPointer (GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid* pointer)
+luaglew_glVertexAttribPointer(lua_State *L) {
+	glVertexAttribPointer(luaL_checkint(L, 1), luaL_checkint(L, 2), luaglew_enum(L, 3), **********CHYBA (GLboolean normalized) NEBINDOVAT************, luaL_checklong(L, 5), **********CHYBA POINTER (const GLvoid* pointer) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix2x3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+luaglew_glUniformMatrix2x3fv(lua_State *L) {
+	glUniformMatrix2x3fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix3x2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+luaglew_glUniformMatrix3x2fv(lua_State *L) {
+	glUniformMatrix3x2fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix2x4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+luaglew_glUniformMatrix2x4fv(lua_State *L) {
+	glUniformMatrix2x4fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix4x2fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+luaglew_glUniformMatrix4x2fv(lua_State *L) {
+	glUniformMatrix4x2fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix3x4fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+luaglew_glUniformMatrix3x4fv(lua_State *L) {
+	glUniformMatrix3x4fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat *value) NEBINDOVAT************);
+	return 0;
+}
+// void glUniformMatrix4x3fv (GLint location, GLsizei count, GLboolean transpose, const GLfloat *value)
+luaglew_glUniformMatrix4x3fv(lua_State *L) {
+	glUniformMatrix4x3fv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA (GLboolean transpose) NEBINDOVAT************, **********CHYBA POINTER (const GLfloat *value) NEBINDOVAT************);
+	return 0;
+}
+// void glColorMaski (GLuint, GLboolean, GLboolean, GLboolean, GLboolean)
+luaglew_glColorMaski(lua_State *L) {
+	glColorMaski(luaL_checkint(L, 1), **********CHYBA (GLboolean) NEBINDOVAT************, **********CHYBA (GLboolean) NEBINDOVAT************, **********CHYBA (GLboolean) NEBINDOVAT************, **********CHYBA (GLboolean) NEBINDOVAT************);
+	return 0;
+}
+// void glGetBooleani_v (GLenum, GLuint, GLboolean*)
+luaglew_glGetBooleani_v(lua_State *L) {
+	glGetBooleani_v(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLboolean*) NEBINDOVAT************);
+	return 0;
+}
+// void glEnablei (GLenum, GLuint)
+luaglew_glEnablei(lua_State *L) {
+	glEnablei(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glDisablei (GLenum, GLuint)
+luaglew_glDisablei(lua_State *L) {
+	glDisablei(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// GLboolean glIsEnabledi (GLenum, GLuint)
+luaglew_glIsEnabledi(lua_State *L) {
+	glIsEnabledi(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glBeginTransformFeedback (GLenum)
+luaglew_glBeginTransformFeedback(lua_State *L) {
+	glBeginTransformFeedback(luaglew_enum(L, 1));
+	return 0;
+}
+// void glEndTransformFeedback (void)
+luaglew_glEndTransformFeedback(lua_State *L) {
+	glEndTransformFeedback(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// void glTransformFeedbackVaryings (GLuint, GLsizei, const GLchar **, GLenum)
+luaglew_glTransformFeedbackVaryings(lua_State *L) {
+	glTransformFeedbackVaryings(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLchar **) NEBINDOVAT************, luaglew_enum(L, 4));
+	return 0;
+}
+// void glGetTransformFeedbackVarying (GLuint, GLuint, GLint*)
+luaglew_glGetTransformFeedbackVarying(lua_State *L) {
+	glGetTransformFeedbackVarying(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glClampColor (GLenum, GLenum)
+luaglew_glClampColor(lua_State *L) {
+	glClampColor(luaglew_enum(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// void glBeginConditionalRender (GLuint, GLenum)
+luaglew_glBeginConditionalRender(lua_State *L) {
+	glBeginConditionalRender(luaL_checkint(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// void glEndConditionalRender (void)
+luaglew_glEndConditionalRender(lua_State *L) {
+	glEndConditionalRender(**********CHYBA (void) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI1i (GLuint, GLint)
+luaglew_glVertexAttribI1i(lua_State *L) {
+	glVertexAttribI1i(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glVertexAttribI2i (GLuint, GLint, GLint)
+luaglew_glVertexAttribI2i(lua_State *L) {
+	glVertexAttribI2i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glVertexAttribI3i (GLuint, GLint, GLint, GLint)
+luaglew_glVertexAttribI3i(lua_State *L) {
+	glVertexAttribI3i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glVertexAttribI4i (GLuint, GLint, GLint, GLint, GLint)
+luaglew_glVertexAttribI4i(lua_State *L) {
+	glVertexAttribI4i(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glVertexAttribI1ui (GLuint, GLuint)
+luaglew_glVertexAttribI1ui(lua_State *L) {
+	glVertexAttribI1ui(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glVertexAttribI2ui (GLuint, GLuint, GLuint)
+luaglew_glVertexAttribI2ui(lua_State *L) {
+	glVertexAttribI2ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glVertexAttribI3ui (GLuint, GLuint, GLuint, GLuint)
+luaglew_glVertexAttribI3ui(lua_State *L) {
+	glVertexAttribI3ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glVertexAttribI4ui (GLuint, GLuint, GLuint, GLuint, GLuint)
+luaglew_glVertexAttribI4ui(lua_State *L) {
+	glVertexAttribI4ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glVertexAttribI1iv (GLuint, const GLint*)
+luaglew_glVertexAttribI1iv(lua_State *L) {
+	glVertexAttribI1iv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI2iv (GLuint, const GLint*)
+luaglew_glVertexAttribI2iv(lua_State *L) {
+	glVertexAttribI2iv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI3iv (GLuint, const GLint*)
+luaglew_glVertexAttribI3iv(lua_State *L) {
+	glVertexAttribI3iv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4iv (GLuint, const GLint*)
+luaglew_glVertexAttribI4iv(lua_State *L) {
+	glVertexAttribI4iv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI1uiv (GLuint, const GLuint*)
+luaglew_glVertexAttribI1uiv(lua_State *L) {
+	glVertexAttribI1uiv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI2uiv (GLuint, const GLuint*)
+luaglew_glVertexAttribI2uiv(lua_State *L) {
+	glVertexAttribI2uiv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI3uiv (GLuint, const GLuint*)
+luaglew_glVertexAttribI3uiv(lua_State *L) {
+	glVertexAttribI3uiv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4uiv (GLuint, const GLuint*)
+luaglew_glVertexAttribI4uiv(lua_State *L) {
+	glVertexAttribI4uiv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4bv (GLuint, const GLbyte*)
+luaglew_glVertexAttribI4bv(lua_State *L) {
+	glVertexAttribI4bv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLbyte*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4sv (GLuint, const GLshort*)
+luaglew_glVertexAttribI4sv(lua_State *L) {
+	glVertexAttribI4sv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLshort*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4ubv (GLuint, const GLubyte*)
+luaglew_glVertexAttribI4ubv(lua_State *L) {
+	glVertexAttribI4ubv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLubyte*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribI4usv (GLuint, const GLushort*)
+luaglew_glVertexAttribI4usv(lua_State *L) {
+	glVertexAttribI4usv(luaL_checkint(L, 1), **********CHYBA POINTER (const GLushort*) NEBINDOVAT************);
+	return 0;
+}
+// void glVertexAttribIPointer (GLuint, GLint, GLenum, GLsizei, const GLvoid*)
+luaglew_glVertexAttribIPointer(lua_State *L) {
+	glVertexAttribIPointer(luaL_checkint(L, 1), luaL_checkint(L, 2), luaglew_enum(L, 3), luaL_checklong(L, 4), **********CHYBA POINTER (const GLvoid*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribIiv (GLuint, GLenum, GLint*)
+luaglew_glGetVertexAttribIiv(lua_State *L) {
+	glGetVertexAttribIiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetVertexAttribIuiv (GLuint, GLenum, GLuint*)
+luaglew_glGetVertexAttribIuiv(lua_State *L) {
+	glGetVertexAttribIuiv(luaL_checkint(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetUniformuiv (GLuint, GLint, GLuint*)
+luaglew_glGetUniformuiv(lua_State *L) {
+	glGetUniformuiv(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glBindFragDataLocation (GLuint, GLuint, const GLchar*)
+luaglew_glBindFragDataLocation(lua_State *L) {
+	glBindFragDataLocation(luaL_checkint(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLchar*) NEBINDOVAT************);
+	return 0;
+}
+// GLint glGetFragDataLocation (GLuint, const GLchar*)
+luaglew_glGetFragDataLocation(lua_State *L) {
+	glGetFragDataLocation(luaL_checkint(L, 1), **********CHYBA POINTER (const GLchar*) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform1ui (GLint, GLuint)
+luaglew_glUniform1ui(lua_State *L) {
+	glUniform1ui(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glUniform2ui (GLint, GLuint, GLuint)
+luaglew_glUniform2ui(lua_State *L) {
+	glUniform2ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glUniform3ui (GLint, GLuint, GLuint, GLuint)
+luaglew_glUniform3ui(lua_State *L) {
+	glUniform3ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glUniform4ui (GLint, GLuint, GLuint, GLuint, GLuint)
+luaglew_glUniform4ui(lua_State *L) {
+	glUniform4ui(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4), luaL_checkint(L, 5));
+	return 0;
+}
+// void glUniform1uiv (GLint, GLsizei, const GLuint*)
+luaglew_glUniform1uiv(lua_State *L) {
+	glUniform1uiv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform2uiv (GLint, GLsizei, const GLuint*)
+luaglew_glUniform2uiv(lua_State *L) {
+	glUniform2uiv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform3uiv (GLint, GLsizei, const GLuint*)
+luaglew_glUniform3uiv(lua_State *L) {
+	glUniform3uiv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glUniform4uiv (GLint, GLsizei, const GLuint*)
+luaglew_glUniform4uiv(lua_State *L) {
+	glUniform4uiv(luaL_checkint(L, 1), luaL_checklong(L, 2), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glTexParameterIiv (GLenum, GLenum, const GLint*)
+luaglew_glTexParameterIiv(lua_State *L) {
+	glTexParameterIiv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glTexParameterIuiv (GLenum, GLenum, const GLuint*)
+luaglew_glTexParameterIuiv(lua_State *L) {
+	glTexParameterIuiv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTexParameterIiv (GLenum, GLenum, GLint*)
+luaglew_glGetTexParameterIiv(lua_State *L) {
+	glGetTexParameterIiv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glGetTexParameterIuiv (GLenum, GLenum, GLuint*)
+luaglew_glGetTexParameterIuiv(lua_State *L) {
+	glGetTexParameterIuiv(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glClearBufferiv (GLenum, GLint, const GLint*)
+luaglew_glClearBufferiv(lua_State *L) {
+	glClearBufferiv(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLint*) NEBINDOVAT************);
+	return 0;
+}
+// void glClearBufferuiv (GLenum, GLint, const GLuint*)
+luaglew_glClearBufferuiv(lua_State *L) {
+	glClearBufferuiv(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLuint*) NEBINDOVAT************);
+	return 0;
+}
+// void glClearBufferfv (GLenum, GLint, const GLfloat*)
+luaglew_glClearBufferfv(lua_State *L) {
+	glClearBufferfv(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (const GLfloat*) NEBINDOVAT************);
+	return 0;
+}
+// void glClearBufferfi (GLenum, GLint, GLfloat, GLint)
+luaglew_glClearBufferfi(lua_State *L) {
+	glClearBufferfi(luaglew_enum(L, 1), luaL_checkint(L, 2), (GLfloat)luaL_checknumber(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// const GLubyte* glGetStringi (GLenum, GLuint)
+luaglew_glGetStringi(lua_State *L) {
+	glGetStringi(luaglew_enum(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glDrawArraysInstanced (GLenum, GLint, GLsizei, GLsizei)
+luaglew_glDrawArraysInstanced(lua_State *L) {
+	glDrawArraysInstanced(luaglew_enum(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaL_checklong(L, 4)
+
+// void glDrawElementsInstanced (GLenum, GLsizei, GLenum, const GLvoid*, GLsizei)
+luaglew_glDrawElementsInstanced(lua_State *L) {
+	glDrawElementsInstanced(luaglew_enum(L, 1), luaL_checklong(L, 2), luaglew_enum(L, 3), **********CHYBA POINTER (const GLvoid*) NEBINDOVAT************, luaL_checklong(L, 5)
+
+// void glTexBuffer (GLenum, GLenum, GLuint)
+luaglew_glTexBuffer(lua_State *L) {
+	glTexBuffer(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3));
+	return 0;
+}
+// void glPrimitiveRestartIndex (GLuint)
+luaglew_glPrimitiveRestartIndex(lua_State *L) {
+	glPrimitiveRestartIndex(luaL_checkint(L, 1));
+	return 0;
+}
+// void glGetInteger64i_v (GLenum, GLuint, GLint64 *)
+luaglew_glGetInteger64i_v(lua_State *L) {
+	glGetInteger64i_v(luaglew_enum(L, 1), luaL_checkint(L, 2), **********CHYBA POINTER (GLint64 *) NEBINDOVAT************);
+	return 0;
+}
+// void glGetBufferParameteri64v (GLenum, GLenum, GLint64 *)
+luaglew_glGetBufferParameteri64v(lua_State *L) {
+	glGetBufferParameteri64v(luaglew_enum(L, 1), luaglew_enum(L, 2), **********CHYBA POINTER (GLint64 *) NEBINDOVAT************);
+	return 0;
+}
+// void glFramebufferTexture (GLenum, GLenum, GLuint, GLint)
+luaglew_glFramebufferTexture(lua_State *L) {
+	glFramebufferTexture(luaglew_enum(L, 1), luaglew_enum(L, 2), luaL_checkint(L, 3), luaL_checkint(L, 4));
+	return 0;
+}
+// void glVertexAttribDivisor (GLuint index, GLuint divisor)
+luaglew_glVertexAttribDivisor(lua_State *L) {
+	glVertexAttribDivisor(luaL_checkint(L, 1), luaL_checkint(L, 2));
+	return 0;
+}
+// void glMinSampleShading (GLclampf value)
+luaglew_glMinSampleShading(lua_State *L) {
+	glMinSampleShading((GLclampf)luaL_checknumber(L, 1));
+	return 0;
+}
+// void glBlendEquationSeparatei (GLuint buf, GLenum modeRGB, GLenum modeAlpha)
+luaglew_glBlendEquationSeparatei(lua_State *L) {
+	glBlendEquationSeparatei(luaL_checkint(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3));
+	return 0;
+}
+// void glBlendEquationi (GLuint buf, GLenum mode)
+luaglew_glBlendEquationi(lua_State *L) {
+	glBlendEquationi(luaL_checkint(L, 1), luaglew_enum(L, 2));
+	return 0;
+}
+// void glBlendFuncSeparatei (GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha)
+luaglew_glBlendFuncSeparatei(lua_State *L) {
+	glBlendFuncSeparatei(luaL_checkint(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3), luaglew_enum(L, 4), luaglew_enum(L, 5));
+	return 0;
+}
+// void glBlendFunci (GLuint buf, GLenum src, GLenum dst)
+luaglew_glBlendFunci(lua_State *L) {
+	glBlendFunci(luaL_checkint(L, 1), luaglew_enum(L, 2), luaglew_enum(L, 3));
+	return 0;
+}
+// void glAddSwapHintRectWIN (GLint x, GLint y, GLsizei width, GLsizei height)
+luaglew_glAddSwapHintRectWIN(lua_State *L) {
+	glAddSwapHintRectWIN(luaL_checkint(L, 1), luaL_checkint(L, 2), luaL_checklong(L, 3), luaL_checklong(L, 4)
+
