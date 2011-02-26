@@ -566,27 +566,42 @@ int get_list(char *path, FILE *consts_list, FILE *funcs_name_list, FILE *funcs_p
 // spusti prehladavanie a pracovanie priecinku s definiciami
 int main()
 {
+<<<<<<< HEAD
     FILE *consts_list, *funcs_list, *funcs_binding_code;
 
     consts_list = fopen("../consts_list.txt","w");
     funcs_list = fopen("../funcs_list.txt","w");
     funcs_binding_code = fopen("../funcs_binding_code.txt","w");
 
+=======
+    FILE *consts_list, *funcs_name_list, *funcs_prot_list;
+
+    consts_list = fopen("../consts_list.txt","w");
+    funcs_name_list = fopen("../funcs_name_list.txt","w");
+    funcs_prot_list = fopen("../funcs_prot_list.txt","w");
+>>>>>>> 4dcf673284afe5253c2d8c66d1eca4c41b309e97
 
     // uvodna hlavicka pre konstanty
     fprintf(consts_list,"static const LUAGLEW_CONST const_list[] = {\n");
 
     //uvodna hlavicka pre nazvy funkcii
+<<<<<<< HEAD
     fprintf(funcs_list,"static const struct luaL_Reg luaglew_lib[] = {\n");
 
 
 
     get_list("../../core", consts_list, funcs_list, funcs_binding_code);
+=======
+    fprintf(funcs_name_list,"static const struct luaL_Reg luaglew_lib[] = {\n");
+
+    get_list("../../core",consts_list, funcs_name_list, funcs_prot_list);
+>>>>>>> 4dcf673284afe5253c2d8c66d1eca4c41b309e97
 
     //prida sentinel konstantam
     fprintf(consts_list,"\t{NULL, NULL}\n};\n");
 
     //prida sentinel a funkciu na reegistraciu funkcii
+<<<<<<< HEAD
     fprintf(funcs_list,"\t{NULL, NULL}\n};\n");
     fprintf(funcs_list,"\nint luaopen_luaglew (lua_State *L) {\n\tluaL_register(L, \"luaglew\", luaglew_lib);\n\treturn 1;\n}");
 
@@ -595,6 +610,14 @@ int main()
     fclose(consts_list);
     fclose(funcs_list);
     fclose(funcs_binding_code);
+=======
+    fprintf(funcs_name_list,"\t{NULL, NULL}\n};\n");
+    fprintf(funcs_name_list,"\nint luaopen_luaglew (lua_State *L) {\n\tluaL_register(L, \"luaglew\", luaglew_lib);\n\treturn 1;\n}");
+
+    fclose(consts_list);
+    fclose(funcs_name_list);
+    fclose(funcs_prot_list);
+>>>>>>> 4dcf673284afe5253c2d8c66d1eca4c41b309e97
 
     printf("\n\tfunkcii s prototypom   %d\n\tfunkcii bez prototypu  %d\n\tkonstant\t       %d\n",pocet1,pocet2,pocet3);
     printf("__________________________________________________________");
