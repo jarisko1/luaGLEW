@@ -1,5 +1,8 @@
 require("luaglew")
 
-luaglew.glViewport(0,0,100,100)
+tabulka = {"jano", "juro", "212"}
+luaglew.luaglew_test_function(tabulka)
+luaglew.luaglew_test_function(tabulka)
+
 
 
