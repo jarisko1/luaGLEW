@@ -36,7 +36,14 @@
 // pocet1 funckii s prototypm, pocet2 nazvov funkcii a pocet3 konstant
 int pocet1=0, pocet2=0, pocet3=0;
 
+<<<<<<< HEAD
 // function gets list of constants
+=======
+// ziska zoznam konstant
+// este su niektore duplicitne - asi necham cely ten zoznam prebehnut unicom bez sortu, duplictne by mali byt za sebu, otestujem unicom zo sortom
+// treba to aj sortnut, lebo konstanty su v suboroch duplicitne. cize hlavicku az nakonec treba vpisat
+// inak hotovo
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 int get_consts_list(FILE *from, FILE *consts_list)
 {
 
@@ -44,8 +51,14 @@ int get_consts_list(FILE *from, FILE *consts_list)
 
     while(feof(from)==0)
     {
+<<<<<<< HEAD
         //constants start with GL_ or WGL_, we ignore GLX_ constants and http:// links
         if(fscanf(from,"%s",str) && (strstr(str, "GL_") || strstr(str, "WGL_")) && !strstr(str,"http://") && !strstr(str, "GLX_"))
+=======
+        // konstatny zacinaju na GL_
+        // aj niektore internetove definicie obsahuju GL_, preto su konstanty len tie bez http://
+        if(fscanf(from,"%s",str) && (strstr(str, "GL_") || strstr(str, "GLX_") || strstr(str, "WGL_")) && !strstr(str,"http://"))
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
         {
            pocet3++;
            fprintf(consts_list,"\t{\"%s\", %s},\n",str,str);
@@ -71,6 +84,11 @@ char *return_value_function(char *pointer)
 // number je poradie na zasobniku. pri dest 2 nema zmysel
 char *luaglew_typetobind_function(char *string, int dest, int number)
 {
+<<<<<<< HEAD
+=======
+    FILE *pom;
+    pom=fopen("../pom.txt","a");
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
     char binded[500];
     char type[40];
     int field_flag=0;  // ak 1, tak sa tam nachadza pole a treba volat prislusne funckie
@@ -105,7 +123,10 @@ char *luaglew_typetobind_function(char *string, int dest, int number)
 // 2D FIELDS //
         if(strstr(string,"**")!=NULL)
         {
+<<<<<<< HEAD
 
+=======
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
             if(strstr(string,"GLchar")!=NULL)
                 sprintf(binded,"(GLchar **)luaglew_checkarray_2char(L, %d)", number);
             else if(strstr(string,"char")!=NULL)
@@ -118,7 +139,10 @@ char *luaglew_typetobind_function(char *string, int dest, int number)
 // 1D FIELDS //
         else if(strchr(string,'*')!=NULL)
         {
+<<<<<<< HEAD
 
+=======
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
             if(strstr(string,"GLchar")!=NULL)
                 sprintf(binded,"(GLchar *)luaglew_checkarray_char(L, %d)", number);
             else if(strstr(string,"char")!=NULL)
@@ -165,6 +189,11 @@ char *luaglew_typetobind_function(char *string, int dest, int number)
                 sprintf(binded,"luaglew_checkarray_void(L, %d)", number);  // pole voidov ??
             else if(strstr(string,"Display")!=NULL)
                 sprintf(binded,"luaglew_checkarray_display(L, %d)", number);
+<<<<<<< HEAD
+=======
+            else if(strstr(string,"GLXHyperpipeConfigSGIX")!=NULL)
+                sprintf(binded,"luaglew_checkarray_GLXHyperpipeConfigSGIX(L, %d)", number);
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
             else if(strstr(string,"GLvdpauSurfaceNV")!=NULL)
                 sprintf(binded,"luaglew_checkarray_GLvdpauSurfaceNV(L, %d)", number);
             else if(strstr(string,"GetProcAddress")!=NULL)
@@ -244,7 +273,19 @@ void lua_pushstring (lua_State *L, const char *s);
         }
         else if(strchr(string,'*')!=NULL)
         {
+<<<<<<< HEAD
             if(strstr(string,"GLubyte")!=NULL)
+=======
+            if(strstr(string,"Display")!=NULL)
+                sprintf(binded,"luaglew_pusharray_display(L, return_value)");
+            else if(strstr(string,"GLXFBConfig")!=NULL)
+                sprintf(binded,"luaglew_pusharray_GLXFBConfig(L, return_value)");
+            else if(strstr(string,"GLXHyperpipeConfigSGIX")!=NULL)
+                sprintf(binded,"luaglew_pusharray_GLXHyperpipeConfigSGIX(L, return_value)");
+            else if(strstr(string,"GLXHyperpipeNetworkSGIX")!=NULL)
+                sprintf(binded,"luaglew_pusharray_GLXHyperpipeNetworkSGIX(L, return_value)");
+            else if(strstr(string,"GLubyte")!=NULL)
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
                 sprintf(binded,"luaglew_pusharray_GLubyte(L, return_value)");
             else if(strstr(string,"GLvoid")!=NULL)
                 sprintf(binded,"(GLvoid *)luaglew_pusharray_void(L, return_value)");
@@ -252,6 +293,10 @@ void lua_pushstring (lua_State *L, const char *s);
                 sprintf(binded,"luaglew_pusharray_void(L, return_value)");
             else if(strstr(string,"XVisualInfo")!=NULL)
                 sprintf(binded,"luaglew_pusharray_XVisualInfo(L, return_value)");
+<<<<<<< HEAD
+=======
+
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
             else sprintf(binded,"** push(1-rozmerne pole typu %s) **", type);
         }
         else if(strstr(string,"GLint")!=NULL)
@@ -308,7 +353,11 @@ void lua_pushstring (lua_State *L, const char *s);
             sprintf(binded,"push( ** nespracovany typ %s ** )", type);
         }
     }
+<<<<<<< HEAD
 
+=======
+    fclose(pom);
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
     //printf("%s -> %s\n",string,binded);
     return binded;
 }
@@ -334,6 +383,7 @@ int get_func_prot_list(FILE *from, FILE *funcs_prot_list)
 
     char arguments[400];  // zoznam vsetkych argumentov
 
+<<<<<<< HEAD
     FILE *pom;
     pom=fopen("../pom.txt","a");
 
@@ -343,6 +393,14 @@ int get_func_prot_list(FILE *from, FILE *funcs_prot_list)
         if(fgets(str, 398, from) && (strstr(str, " gl") || strstr(str, " wgl")) && !strstr(str, "http://") && !strstr(str,"typedef") && !strstr(str,"glX")  && !strstr(str,"Display"))
         {
 
+=======
+    while(feof(from)==0)
+    {
+// funkcie zacinaju gl alebo wgl
+// aj niektore definicie obsahuju gl, ale kazda funkcia ma pred nazvom presne jednu medzeru - narvatova_hodnota funkcia(atributy), neobsahuje typedef
+        if(fgets(str, 398, from) && (strstr(str, " gl") || strstr(str, " wgl")) && !strstr(str, "http://") && !strstr(str,"typedef"))
+        {
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
             pocet1++;
             return_num=0;
             return_string[0]='\0';
@@ -399,12 +457,15 @@ int get_func_prot_list(FILE *from, FILE *funcs_prot_list)
 
             fprintf(funcs_prot_list,"static int luaglew_%s(lua_State *L) {\n",function_name);
 
+<<<<<<< HEAD
             //generating list of functions with double pointer in arguments for detail analysis
             if(strstr(clean,"**"))
                 fprintf(pom,"%s\n",clean);
 
 
 
+=======
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 //vysekam len argumenty medzi zatvorkami a ulozim do stringu arguments
             for(position+=2, i=0; position<400; position++, i++)
             {
@@ -479,12 +540,21 @@ int get_func_prot_list(FILE *from, FILE *funcs_prot_list)
             fprintf(funcs_prot_list,"%s\n",function_body);
         }
     }
+<<<<<<< HEAD
     fclose(pom);
+=======
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 
     return 0;
 }
 
+<<<<<<< HEAD
 //function gets list of functions
+=======
+// ziska zoznam funkcii bez prototypov
+// malo by byt dobre
+// treba ale skontrolovat ci su tam vsetky funkcie
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 int get_func_name_list(FILE *from, FILE *funcs_name_list)
 {
     char str[200];
@@ -493,7 +563,11 @@ int get_func_name_list(FILE *from, FILE *funcs_name_list)
     {
         // funkcie zacinaju gl
         // neobsahuju http://
+<<<<<<< HEAD
         if(fscanf(from, " %s", str) && strstr(str, "gl") && !strstr(str, "http://") &&!strstr(str,"GL") && !strstr(str,"glX")&& !strstr(str,"glx"))
+=======
+        if(fscanf(from, " %s", str) && strstr(str, "gl") && !strstr(str, "http://") &&!strstr(str,"GL"))
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
         {
             pocet2++;
             fprintf(funcs_name_list,"\t{\"%s\", luaglew_%s},\n",str,str);
@@ -559,27 +633,72 @@ int get_list(char *path, FILE *consts_list, FILE *funcs_name_list, FILE *funcs_p
 // spusti prehladavanie a pracovanie priecinku s definiciami
 int main()
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9b429be17b0df11d6ed9fdb6a75326fbe2fc0563
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
     FILE *consts_list, *funcs_list, *funcs_binding_code;
 
     consts_list = fopen("../consts_list.txt","w");
     funcs_list = fopen("../funcs_list.txt","w");
     funcs_binding_code = fopen("../funcs_binding_code.txt","w");
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    FILE *consts_list, *funcs_name_list, *funcs_prot_list;
+
+    consts_list = fopen("../consts_list.txt","w");
+    funcs_name_list = fopen("../funcs_name_list.txt","w");
+    funcs_prot_list = fopen("../funcs_prot_list.txt","w");
+>>>>>>> 4dcf673284afe5253c2d8c66d1eca4c41b309e97
+>>>>>>> 9b429be17b0df11d6ed9fdb6a75326fbe2fc0563
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 
     // uvodna hlavicka pre konstanty
     fprintf(consts_list,"static const LUAGLEW_CONST const_list[] = {\n");
 
     //uvodna hlavicka pre nazvy funkcii
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9b429be17b0df11d6ed9fdb6a75326fbe2fc0563
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
     fprintf(funcs_list,"static const struct luaL_Reg luaglew_lib[] = {\n");
 
 
 
     get_list("../../core", consts_list, funcs_list, funcs_binding_code);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    fprintf(funcs_name_list,"static const struct luaL_Reg luaglew_lib[] = {\n");
+
+    get_list("../../core",consts_list, funcs_name_list, funcs_prot_list);
+>>>>>>> 4dcf673284afe5253c2d8c66d1eca4c41b309e97
+>>>>>>> 9b429be17b0df11d6ed9fdb6a75326fbe2fc0563
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 
     //prida sentinel konstantam
     fprintf(consts_list,"\t{NULL, NULL}\n};\n");
 
     //prida sentinel a funkciu na reegistraciu funkcii
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9b429be17b0df11d6ed9fdb6a75326fbe2fc0563
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
     fprintf(funcs_list,"\t{NULL, NULL}\n};\n");
     fprintf(funcs_list,"\nint luaopen_luaglew (lua_State *L) {\n\tluaL_register(L, \"luaglew\", luaglew_lib);\n\treturn 1;\n}");
 
@@ -588,6 +707,20 @@ int main()
     fclose(consts_list);
     fclose(funcs_list);
     fclose(funcs_binding_code);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    fprintf(funcs_name_list,"\t{NULL, NULL}\n};\n");
+    fprintf(funcs_name_list,"\nint luaopen_luaglew (lua_State *L) {\n\tluaL_register(L, \"luaglew\", luaglew_lib);\n\treturn 1;\n}");
+
+    fclose(consts_list);
+    fclose(funcs_name_list);
+    fclose(funcs_prot_list);
+>>>>>>> 4dcf673284afe5253c2d8c66d1eca4c41b309e97
+>>>>>>> 9b429be17b0df11d6ed9fdb6a75326fbe2fc0563
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 
     printf("\n\tfunkcii s prototypom   %d\n\tfunkcii bez prototypu  %d\n\tkonstant\t       %d\n",pocet1,pocet2,pocet3);
     printf("__________________________________________________________");

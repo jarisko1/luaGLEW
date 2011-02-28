@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 version 2.28
 
 	deleted GLX functions for XWindow System and functions with Display parameter (will be replaced by iup or something like that)
 	generated functions with double pointer (**) for further analysis
 
+=======
+>>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
 version 2.26
 
 	added generator for FFI code (tested just lightly)
