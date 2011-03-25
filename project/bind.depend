@@ -123,3 +123,50 @@
 1283846508 c:\users\anubis\desktop\luaglew\include\gl\wglew.h
 	<windows.h>
 
+1300998357 source:f:\(6) škola\fiit bc 3. roèník\ls\bakalársky projekt ii\luaglew\project\bind.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+	"GL/glew.h"
+	"GL/wglew.h"
+
+1218007812 f:\(6) škola\fiit bc 3. roèník\ls\bakalársky projekt ii\luaglew\include\lua.h
+	<stdarg.h>
+	<stddef.h>
+	"luaconf.h"
+
+1219919976 f:\(6) škola\fiit bc 3. roèník\ls\bakalársky projekt ii\luaglew\include\luaconf.h
+	<limits.h>
+	<stddef.h>
+	<unistd.h>
+	<io.h>
+	<stdio.h>
+	<stdio.h>
+	<readline/readline.h>
+	<readline/history.h>
+	<assert.h>
+	<math.h>
+	<unistd.h>
+
+1198749744 f:\(6) škola\fiit bc 3. roèník\ls\bakalársky projekt ii\luaglew\include\lauxlib.h
+	<stddef.h>
+	<stdio.h>
+	"lua.h"
+
+1198749744 f:\(6) škola\fiit bc 3. roèník\ls\bakalársky projekt ii\luaglew\include\lualib.h
+	"lua.h"
+
+1296458246 f:\(6) škola\fiit bc 3. roèník\ls\bakalársky projekt ii\luaglew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1296458246 f:\(6) škola\fiit bc 3. roèník\ls\bakalársky projekt ii\luaglew\include\gl\wglew.h
+	<windows.h>
+

@@ -1,4 +1,3 @@
 EXPORTS
     luaglew_const_bind @1
-    luaglew_glShadeModel @2
-    luaopen_luaglew @3
+    luaopen_luaglew @2

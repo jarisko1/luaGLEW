@@ -21,10 +21,11 @@
 					<Add library="lua51" />
 					<Add library="opengl32" />
 					<Add library="glu32" />
+					<Add library="glew32" />
 					<Add directory="..\lib" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="cmd /c copy .\bin\debug\libbind.dll ..\luaglew.dll" />
+					<Add after="cmd /c copy .\bin\debug\libbind.dll ..\test\luaglew.dll" />
 				</ExtraCommands>
 			</Target>
 			<Target title="Release">
