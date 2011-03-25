@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	
 		GLboolean glIsProgramARB (GLuint program)
@@ -1474,6 +1475,8 @@
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -2531,19 +2534,26 @@
 	void glDeleteProgramsARB (GLsizei n, const GLuint *programs)
 	void glGenProgramsARB (GLsizei n, GLuint *programs)
 	GLboolean glIsProgramARB (GLuint program)
+<<<<<<< HEAD
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
+=======
 >>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 	void glProgramEnvParameter4dARB (GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)
 	void glProgramEnvParameter4dvARB (GLenum target, GLuint index, const GLdouble *params)
 	void glProgramEnvParameter4fARB (GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w)
 	void glProgramEnvParameter4fvARB (GLenum target, GLuint index, const GLfloat *params)
 <<<<<<< HEAD
+<<<<<<< HEAD
 	void glProgramEnvParameters4fvEXT (GLenum target, GLuint index, GLsizei count, const GLfloat *params)
+=======
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 =======
 >>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 	void glProgramLocalParameter4dARB (GLenum target, GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w)
 	void glProgramLocalParameter4dvARB (GLenum target, GLuint index, const GLdouble *params)
 	void glProgramLocalParameter4fARB (GLenum target, GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w)
 	void glProgramLocalParameter4fvARB (GLenum target, GLuint index, const GLfloat *params)
+<<<<<<< HEAD
 <<<<<<< HEAD
 	void glProgramLocalParameters4fvEXT (GLenum target, GLuint index, GLsizei count, const GLfloat *params)
 	void glProgramStringARB (GLenum target, GLenum format, GLsizei len, const GLvoid *string)
@@ -2844,6 +2854,8 @@
 	void glWindowPos3sv (const GLshort *v)
 	void glWindowPos3svARB (const GLshort *)
 =======
+=======
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 	void glGetProgramEnvParameterdvARB (GLenum target, GLuint index, GLdouble *params)
 	void glGetProgramEnvParameterfvARB (GLenum target, GLuint index, GLfloat *params)
 	void glProgramEnvParameters4fvEXT (GLenum target, GLuint index, GLsizei count, const GLfloat *params)
@@ -5709,4 +5721,7 @@ void glUniformMatrix4x3fv  (GLint location, GLsizei count, GLboolean transpose, 
 >>>>>>> 4dcf673284afe5253c2d8c66d1eca4c41b309e97
 >>>>>>> 9b429be17b0df11d6ed9fdb6a75326fbe2fc0563
 >>>>>>> bd917aecc4fb7350ace8d51da861a89e641773cd
+<<<<<<< HEAD
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
+=======
 >>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
