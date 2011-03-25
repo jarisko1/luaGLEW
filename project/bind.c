@@ -3829,6 +3829,7 @@ static const LUAGLEW_CONST const_list[] = {
 #endif
 #ifdef GL_VERSION_4_1
 	{"GL_VERSION_4_1", GL_VERSION_4_1},
+<<<<<<< HEAD
 #endif
 #ifdef GL_VERSION_4_1
 	{"GL_VERSION_4_1", GL_VERSION_4_1},
@@ -6759,15 +6760,45 @@ static const LUAGLEW_CONST const_list[] = {
 	{"WGL_NV_vertex_array_range", WGL_NV_vertex_array_range},
 #endif
 	{0, 0}
+=======
+	{"GL_WIN_swap_hint", GL_WIN_swap_hint},
+	{"GL_WIN_swap_hint", GL_WIN_swap_hint},
+	{"WGL_ATI_render_texture_rectangle", WGL_ATI_render_texture_rectangle},
+	{"WGL_ATI_render_texture_rectangle", WGL_ATI_render_texture_rectangle},
+	{"WGL_TEXTURE_RECTANGLE_ATI", WGL_TEXTURE_RECTANGLE_ATI},
+	{"WGL_EXT_framebuffer_sRGB", WGL_EXT_framebuffer_sRGB},
+	{"WGL_EXT_framebuffer_sRGB", WGL_EXT_framebuffer_sRGB},
+	{"WGL_FRAMEBUFFER_SRGB_CAPABLE_EXT", WGL_FRAMEBUFFER_SRGB_CAPABLE_EXT},
+	{"WGL_EXT_pixel_format_packed_float", WGL_EXT_pixel_format_packed_float},
+	{"WGL_EXT_pixel_format_packed_float", WGL_EXT_pixel_format_packed_float},
+	{"WGL_TYPE_RGBA_UNSIGNED_FLOAT_EXT", WGL_TYPE_RGBA_UNSIGNED_FLOAT_EXT},
+	{"WGL_NV_gpu_affinity", WGL_NV_gpu_affinity},
+	{"WGL_NV_gpu_affinity", WGL_NV_gpu_affinity},
+	{"GL_QUADS",GL_QUADS},
+	{"WGL_ERROR_INCOMPATIBLE_AFFINITY_MASKS_NV", WGL_ERROR_INCOMPATIBLE_AFFINITY_MASKS_NV},
+	{"WGL_ERROR_MISSING_AFFINITY_MASK_NV", WGL_ERROR_MISSING_AFFINITY_MASK_NV},
+	{"WGL_NV_vertex_array_range", WGL_NV_vertex_array_range},
+	{"WGL_NV_vertex_array_range", WGL_NV_vertex_array_range},
+	{"GL_TRIANGLES",GL_TRIANGLES},
+	{NULL, NULL}
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 };
 
 //////////////////////////////////////////////////////////////////////////
 //------------------ CONSTANTS BINDINDING FUNCTION ---------------------//
+<<<<<<< HEAD
 //////////////////////////////////////////////////////////////////////////
 int luaglew_const_bind(lua_State *L)
 {
     int i;
 
+=======
+int luaglew_const_bind(lua_State *L)
+{
+    int i;
+    //prejdem cely zoznam konstant a postupne vsetky nastavim ako globalne premenne
+    //netreba dat do tabulky luaglew ??????
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
     for(i=0;const_list[i].name!=NULL;i++)
     {
         lua_pushnumber(L,const_list[i].value);
@@ -6782,7 +6813,10 @@ int luaglew_const_bind(lua_State *L)
 
 //////////////////////////////////////////////////////////////////////////
 //---------------------- FUNCTIONS DEFINITIONS -------------------------//
+<<<<<<< HEAD
 //////////////////////////////////////////////////////////////////////////
+=======
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 
 /////////////////////// MINE FUNCTIONS //////////////////////////
 
@@ -6805,8 +6839,13 @@ static int luaglew_checkenum(lua_State *L, int index)
     return value;
 }
 
+<<<<<<< HEAD
 /////////////////////// CHECK FIELDS 2D (char, void) ////////////////////////
 // 2D VOID  = 1D ARRAY OF LIGHT USERDATA
+=======
+//////////////////////////// CHECK FIELDS 2D (char, void) ///////////////////////////////////
+// 2D VOID  // ako reprezentovany void??
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 static void **luaglew_checkarray_2void(lua_State *L, int index)
 {
     int n1, n2, i, j;
@@ -6833,8 +6872,12 @@ static void **luaglew_checkarray_2void(lua_State *L, int index)
     lua_remove(L, -1);
     return pole;
 }
+<<<<<<< HEAD
 
 // 2D CHAR = 1D STRING
+=======
+// 2D CHAR = 1D STRING  // bere jak string aj cisla. neni to chyba?
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 static char **luaglew_checkarray_2char(lua_State *L, int index)
 {
     int n, i;
@@ -6855,7 +6898,11 @@ static char **luaglew_checkarray_2char(lua_State *L, int index)
     lua_remove(L, -1);
     return pole;
 }
+<<<<<<< HEAD
 /////////////////////// CHECK FIELDS 1D (boolean, byte, ubyte, char, double, enum, float, int, unit, short, ushort, long(sizei), ulong)///////////
+=======
+//////////////////////////// CHECK FIELDS 1D (boolean, byte, ubyte, char, double, enum, float, int, unit, short, ushort, long(sizei), ulong)///////////////////////////////////
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 // 1D BOOLEAN  // je spravne reprezentovat bool ako int?
 static int *luaglew_checkarray_boolean(lua_State *L, int index)
 {
@@ -6876,12 +6923,15 @@ static int *luaglew_checkarray_boolean(lua_State *L, int index)
 }
 // 1D BYTE
 // 1D UBYTE
+<<<<<<< HEAD
 // 1D VOID
 static void *luaglew_checkarray_void(lua_State *L, int index)
 {
     void *pole;
     return pole;
 }
+=======
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 // 1D CHAR = 1 STRING
 static char *luaglew_checkarray_char(lua_State *L, int index)
 {
@@ -6968,6 +7018,7 @@ static int *luaglew_checkarray_int(lua_State *L, int index)
     return pole;
 }
 
+<<<<<<< HEAD
 // 1D UINT
 static unsigned int *luaglew_checkarray_uint(lua_State *L, int index)
 {
@@ -7063,6 +7114,8 @@ static unsigned long *luaglew_checkarray_ulong(lua_State *L, int index)
     return pole;
 }
 
+=======
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 /*
 //ziska 1-rozmerne pole typu INT zo zasobnika
 static int *luaglew_checkarray_int(lua_State *L, int index)
@@ -7110,8 +7163,13 @@ static int **luaglew_checkarray_2int(lua_State *L, int index)
     lua_remove(L, -1);
     return pole;
 }
+<<<<<<< HEAD
 
 //testovanie ziskavania tabulky do poli
+=======
+*/
+/* testovanie ziskavania tabulky do poli */
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
 static int luaglew_test_function(lua_State *L)
 {
     char **pole;
@@ -7122,6 +7180,7 @@ static int luaglew_test_function(lua_State *L)
     printf("\n");
     return 0;
 }
+<<<<<<< HEAD
 */
 
 //luaglew_pusharray_int
@@ -21430,3 +21489,106 @@ int luaopen_luaglew (lua_State *L)
     return 1;
 }
 
+=======
+
+
+
+
+/////////////////////// OPENGL FUNCTIONS //////////////////////////
+
+// void glViewport(GLint x, GLint y, GLsizei width, GLsizei height)
+static int luaglew_glViewport(lua_State *L)
+{
+    glViewport(luaL_checkint(L,1),luaL_checkint(L,2),luaL_checklong(L,3),luaL_checklong(L,4));
+    return 0;
+}
+
+//void glLoadIdentity(void)
+static int luaglew_glLoadIdentity(lua_State *L)
+{
+    glLoadIdentity();
+    return 0;
+}
+
+//void glMatrixMode(GLenum mode)
+static int luaglew_glMatrixMode(lua_State *L)
+{
+    glMatrixMode(GL_MODELVIEW);
+    return 0;
+}
+
+//void glClear(GLbitfield mask)
+static int luaglew_glClear(lua_State *L)
+{
+    glClear(GL_COLOR_BUFFER_BIT);
+    return 0;
+}
+
+//void glBegin(	GLenum  	mode)
+static int luaglew_glBegin(lua_State *L)
+{
+    glBegin(luaglew_checkenum(L,1));
+    return 0;
+}
+
+//void glBegin(	GLenum  	mode)
+static int luaglew_glEnd(lua_State *L)
+{
+    glEnd();
+    return 0;
+}
+
+//void glShadeModel(	GLenum  	mode)
+unsigned int luaglew_glShadeModel(lua_State *L)
+{
+    glShadeModel(GL_SMOOTH);
+    return 0;
+}
+
+
+
+//void glVertex3i(	GLint  	x, GLint  	y, GLint  	z);
+static int luaglew_glVertex(lua_State *L)
+{
+    glVertex3i(luaL_checkint(L,1),luaL_checkint(L,2),luaL_checkint(L,3));
+    return 0;
+}
+//void glClearColor(	GLclampf  	red, GLclampf  	green, GLclampf  	blue, GLclampf  	alpha)
+static int luaglew_glClearColor(lua_State *L)
+{
+    glClearColor((GLfloat)luaL_checknumber(L,1),(GLfloat)luaL_checknumber(L,2),(GLfloat)luaL_checknumber(L,3),(GLfloat)luaL_checknumber(L,4));
+    return 0;
+}
+static int luaglew_print(lua_State *L)
+{
+    printf("debil\n");
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////
+//--------------------- FUNCTIONS BINDING FIELD ------------------------//
+static const struct luaL_Reg luaglew_lib[] = {
+    {"glViewport", luaglew_glViewport},
+    {"print",luaglew_print},
+    {"glMatrixMode",luaglew_glMatrixMode},
+    {"glLoadIdentity",luaglew_glLoadIdentity},
+    {"glClear",luaglew_glClear},
+    {"glBegin",luaglew_glBegin},
+    {"glVertex",luaglew_glVertex},
+    {"glEnd",luaglew_glEnd},
+    {"glShadeModel",luaglew_glShadeModel},
+    {"glClearColor",luaglew_glClearColor},
+    {"luaglew_test_function",luaglew_test_function},
+    {NULL,NULL}
+};
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//------------------------------------- LUA OPEN FUNCTION---------------------------------------//
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int luaopen_luaglew (lua_State *L)
+{
+    luaL_register(L, "luaglew", luaglew_lib);
+    luaglew_const_bind(L);
+    return 1;
+}
+>>>>>>> 940bd92024b3d37ca8b7e96e4f0a2df26b84ad09
