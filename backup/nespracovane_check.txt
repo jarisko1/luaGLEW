@@ -1,0 +1,16 @@
+GLXContext
+GLXDrawable
+GLXFBConfig
+GLXPbuffer
+GLXPixmap
+GLXWindow
+GLvdpauSurfaceNV  //typedef GLintptr GLvdpauSurfaceNV  //typedef *int GLintptr
+HDC
+HGPUNV
+PGPU_DEVICE
+Pixmap
+UINT  // unsigned int??
+Window
+_GLXEvent
+
+
