@@ -1,0 +1,14 @@
+void* glMapObjectBufferATI (GLuint buffer)
+
+GLvoid* glMapBuffer (GLenum target, GLenum access)
+
+const GLubyte* glGetStringi (GLenum param1, GLuint param2)
+
+GLvoid * glMapBuffer (GLenum target, GLenum access)
+
+GLvoid * glMapBufferARB (GLenum target, GLenum access)
+
+const GLubyte * glGetString (GLenum name)
+
+void * wglAllocateMemoryNV (GLsizei size, GLfloat readFrequency, GLfloat writeFrequency, GLfloat priority)
+
