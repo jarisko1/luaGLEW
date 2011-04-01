@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version 3.31
 
 	completed luajit ffi - glew binding generator
@@ -11,6 +12,8 @@ version 3.31
 		
 	problem found - glew32.dll doesn't contain everything i need
 
+=======
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
 version 3.12
 
 	added push functions
