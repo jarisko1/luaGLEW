@@ -1,6 +1,4 @@
-GL_VERSION_3_3
-http://www.opengl.org/registry/doc/glspec32.core.20090803.pdf
-
+	GL_VERSION_3_3
 	GL_TEXTURE_SWIZZLE_R 0x8E42
 	GL_TEXTURE_SWIZZLE_G 0x8E43
 	GL_TEXTURE_SWIZZLE_B 0x8E44

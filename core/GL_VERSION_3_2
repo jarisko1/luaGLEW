@@ -1,6 +1,4 @@
-GL_VERSION_3_2
-http://www.opengl.org/registry/doc/glspec32.core.20090803.pdf
-
+	GL_VERSION_3_2
  	GL_CONTEXT_CORE_PROFILE_BIT 0x00000001
 	GL_CONTEXT_COMPATIBILITY_PROFILE_BIT 0x00000002
 	GL_LINES_ADJACENCY 0x000A
@@ -23,6 +21,6 @@ http://www.opengl.org/registry/doc/glspec32.core.20090803.pdf
 	GL_MAX_GEOMETRY_OUTPUT_COMPONENTS 0x9124
 	GL_MAX_FRAGMENT_INPUT_COMPONENTS 0x9125
 	GL_CONTEXT_PROFILE_MASK 0x9126
-	void glGetInteger64i_v (GLenum, GLuint, GLint64 *)
-	void glGetBufferParameteri64v (GLenum, GLenum, GLint64 *)
-	void glFramebufferTexture (GLenum, GLenum, GLuint, GLint)
+	void glGetInteger64i_v (GLenum param1, GLuint param2, GLint64 * param3)
+	void glGetBufferParameteri64v (GLenum param1, GLenum param2, GLint64 * param3)
+	void glFramebufferTexture (GLenum param1, GLenum param2, GLuint param3, GLint param4)
