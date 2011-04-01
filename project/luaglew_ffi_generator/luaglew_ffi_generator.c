@@ -29,7 +29,14 @@ int get_ffi_lib_list(FILE *from, FILE *ffi_lib_list, int kind)
             // constants begin with GL_, WGL_ or GLX_, but they dont contain neither http:// nor [
             if(fscanf(from,"%s",str) && (strstr(str, "GL_") || strstr(str, "GLX_") || strstr(str, "WGL_")) && !strstr(str,"http://" )&& !strstr(str,"["))
             {
+<<<<<<< HEAD
                 fprintf(ffi_lib_list,"//####%s\n",str);
+=======
+<<<<<<< HEAD
+                fprintf(ffi_lib_list,"//####%s\n",str);
+=======
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
                 fprintf(ffi_lib_list,"\t%s = ",str);
                 fscanf(from,"%s",str);
                 if(strstr(str,"0x"))
@@ -47,6 +54,10 @@ int get_ffi_lib_list(FILE *from, FILE *ffi_lib_list, int kind)
         while(feof(from)==0)
         {
             // new types starts with typedef statement
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
             if(fgets(str, 398, from)  &&
                (strstr(str,"typedef")) &&
                !(strstr(str,"GLX")) &&
@@ -63,6 +74,16 @@ int get_ffi_lib_list(FILE *from, FILE *ffi_lib_list, int kind)
                 }
                 else
                     str[strlen(str)-1]='\0';
+<<<<<<< HEAD
+=======
+=======
+            if(fgets(str, 398, from)  && (strstr(str,"typedef")))
+            {
+                //erasing new line symbol at the end of str and putting ; there
+                str[strlen(str)-1]=';';
+                str[strlen(str)]='\0';
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
 
                 fprintf(ffi_lib_list,"%s\n",str);
 
@@ -75,14 +96,27 @@ int get_ffi_lib_list(FILE *from, FILE *ffi_lib_list, int kind)
     //getting functions
     if(kind==2)
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
         char funcName[400];
         int i;
         int have;
         int position;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
 
         while(feof(from)==0)
         {
             //funcions begin with gl and dont contain http or typedef
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
             if(     fgets(str, 398, from) &&
                     (strstr(str, "gl") || strstr(str, "wgl")) &&  // functions start with gl or wgl
                    !strstr(str, "http://") &&  // dont contain http
@@ -115,6 +149,13 @@ int get_ffi_lib_list(FILE *from, FILE *ffi_lib_list, int kind)
                 }
                 funcName[position]='\0';
 
+<<<<<<< HEAD
+=======
+=======
+            if(fgets(str, 398, from) && (strstr(str, " gl") || strstr(str, " wgl")) && !strstr(str, "http://") && !strstr(str,"typedef"))
+            {
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
                 //erasing new line symbol at the end of str and putting ; there
                 if(str[strlen(str)-2]!=';')  // in case of ; already at the end of function
                 {
@@ -123,10 +164,20 @@ int get_ffi_lib_list(FILE *from, FILE *ffi_lib_list, int kind)
                 }
                 else
                     str[strlen(str)-1]='\0';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
 
                 fprintf(ffi_lib_list,"//####%s\n",funcName);
                 fprintf(ffi_lib_list,"%s\n",str);
 
+<<<<<<< HEAD
+=======
+=======
+                fprintf(ffi_lib_list,"%s\n",str);
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
                 funcsnum++;
             }
         }
@@ -193,11 +244,24 @@ int get_list(char *path, FILE *ffi_lib_list, int kind)
 int main()
 {
     FILE *ffi_lib_list;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
     FILE *ffi_lib_list_clean;
 
     ffi_lib_list = fopen("../ffi_lib_list.lua","w");
 
  //header for FFI library
+<<<<<<< HEAD
+=======
+=======
+
+    ffi_lib_list = fopen("../ffi_lib_list.lua","w");
+
+    //header for FFI library
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
     fprintf(ffi_lib_list,"local ffi = require( \"ffi\" )\n\nffi.cdef[[\n\n");
 
     fprintf(ffi_lib_list,"enum {\n");
@@ -210,6 +274,10 @@ int main()
     get_list("../../core",ffi_lib_list,2);
     fprintf(ffi_lib_list,"\n\n\n");
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
 //trailer for FFI library
     fprintf(ffi_lib_list,"]]\n\n");
 
@@ -279,6 +347,15 @@ int main()
     }
     printf("\n_________________ OK (%d duplicates found) _______________\n",duplCount);
 
+<<<<<<< HEAD
+=======
+=======
+    //trailer for FFI library
+    fprintf(ffi_lib_list,"]]\n");
+
+    fclose(ffi_lib_list);
+>>>>>>> 4e0f59d9d9c2cdf9336ba0cbc8b5128a844e3570
+>>>>>>> 2cb750b9dde9f8fc7dbdc56502f2e1cc667fda30
     return 0;
 }
 
