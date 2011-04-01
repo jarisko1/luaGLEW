@@ -1,3 +1,0 @@
-EXPORTS
-    luaglew_const_bind @1
-    luaopen_luaglew @2
