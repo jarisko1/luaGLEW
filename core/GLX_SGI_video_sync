@@ -1,0 +1,3 @@
+	GLX_SGI_video_sync
+	int glXGetVideoSyncSGI (unsigned int* count)
+	int glXWaitVideoSyncSGI (int divisor, int remainder, unsigned int* count)
