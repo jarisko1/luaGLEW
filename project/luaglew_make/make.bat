@@ -1,1 +1,0 @@
-copy /y /b 1.c+..\consts_list.c+2.c+..\funcs_binding_code_clean.c+3.c+..\funcs_list_clean.c+4.c ..\bind.c
