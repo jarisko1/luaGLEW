@@ -1,2 +1,0 @@
-	GLX_ARB_get_proc_address
-	extern void ( * glXGetProcAddressARB (const GLubyte *procName)) (void);
