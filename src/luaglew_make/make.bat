@@ -1,1 +1,0 @@
-copy /y /b intro.c+..\consts_list.c+mine_funcs.c+..\funcs_binding_code_clean.c+..\funcs_list_clean.c+outro.c ..\bind.c
