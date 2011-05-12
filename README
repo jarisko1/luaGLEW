@@ -1,0 +1,76 @@
+version 5.0
+
+	finished work, cleaned folders
+
+version 4.27
+
+	added main function arguments for core folder
+	changed way to require library in lua (instead od require(luaglew), it is now luaglew = require(luaglew))
+	constants and functions are in the same namespace (in the same table)
+	
+	READY FOR CREATING MAKEFILE
+
+version 4.26
+
+	edited glGet functions
+	pusharray functions added again
+	glGen functions repaired
+	changed function to check enums
+	parameter glvoid* functional only in glTexImage
+	finished work
+	
+	TODO
+	
+	make installation makefiles
+	
+
+version 4.13
+
+	tested, listed bugs
+	cancelled generating pusharray functions, only 1 function use it and it will be wrote once and not generated
+
+version 4.10
+
+	refactored code
+
+version 4.6
+
+	glGet functions finished
+
+version 3.31
+
+	completed luajit ffi - glew binding generator
+		- duplicates were deleted
+		- functions that used undefined types were deleted
+		- typedefs for GLX were deleted
+
+	completed luajit ffi - glew binding on
+		- malkia binding tests
+		TODO test for nehe luagl tests
+		
+	problem found - glew32.dll doesn't contain everything i need
+	
+	TOTO glGet functions with single pointer are not generated properly
+
+version 3.12
+
+	added push functions
+	push functions for arrays are problem, because i dont konw their size
+	redefinition problem will maybe solved with function, that compares files itsef, and binding code with definion array
+
+version 3.5
+
+	added testing files from NeHe
+	added .bat file, that concatenate generated files to make binding code
+	generator changed to analyze just one file concatenated from all core files because of redefinitions
+	
+
+version 2.28
+
+	deleted GLX functions for XWindow System and functions with Display parameter (will be replaced by iup or something like that)
+	generated functions with double pointer (**) for further analysis
+
+version 2.26
+
+	added generator for FFI code (tested just lightly)
+	
