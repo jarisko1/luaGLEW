@@ -1,0 +1,23 @@
+INŠTALÁCIA GLEW MODULU PRE LUAJIT
+
+
+1. Skompilova C súbor \src\luaglew_ffi_generator\luaglew_ffi_generator.c
+
+príklad:
+gcc luaglew_ffi_generator.c -o luaglew_ffi_generator
+
+
+2.Spusti vytvorenı súbor, ktorı vygeneruje kninicu pre LuaJIT. Ako parameter berie core prieèinok, ktorı obsahuje GLEW definície.
+
+príklad:
+luaglew_ffi_generator.exe ..\..\core
+
+Súbor vytvorí kninicu o úroveò nišie s názvom ffi_lib_list_clean.lua.
+
+
+3. Premenova ffi_lib_list_clean.lua na luaglew.lua. Súbor u obsahuje kninicu GLEW pre LuaJIT, ktorú mono pouíva.
+V prípade testovania treba nakopírova tento súbor do prieèinku \luajitglew_test, kde sa nachádzajú testovacie súbory.
+
+
+4. Prieèinok s programom vyuívajúcim kninicu LuaJITGLEW, musí obsahova okrem tejto kninice aj kninicu glew32.dll, èo je dynamická kninica GLEW (http://glew.sourceforge.net/install.html).
+Ïalej musí obsahova všetko, èo je potrebné pre pouívanie LuaJIT (http://luajit.org/install.html).

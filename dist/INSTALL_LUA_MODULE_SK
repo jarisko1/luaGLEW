@@ -1,0 +1,56 @@
+INŠTALÁCIA GLEW MODULU PRE JAZYK LUA
+
+
+1. Skompilova C súbor \src\luaglew_list_generator\luaglew_lists_generator.c.
+
+príklad:
+gcc luaglew_lists_generator.c -o luaglew_lists_generator
+
+
+2. Spusti vytvorenı súbor, ktorı vygeneruje preväzovacie kódy. Ako parameter berie CORE prieèinok, ktorı obsahuje GLEW definície. 
+
+príklad:
+luaglew_lists_generator.exe ..\..\core
+
+Po spustení budú vytvorené o prieèinok nišie preväzovacie zoznamy.
+
+
+3. Zlepi vygenerované súbory so súbormi v prieèinku \src\luaglew_make v tomto poradí:
+
+\src\luaglew_make\intro.c
+\src\consts_list.c
+\src\luaglew_make\mine_funcs.c
+\src\funcs_binding_code_clean.c
+\src\funcs_list_clean.c
+\src\luaglew_make\outro.c
+
+do jedného C súboru (napríklad bind.c).
+
+(Pod Windows staèí spusti dávkovı súbor \src\luaglew_make\make.bat)
+
+
+4. Skompilova bind.c do .dll súboru s prilikovaním súborov
+
+lua51.dll
+opengl32.dll
+glu32.dll
+glew32.dll
+
+Dll súbory sa nachádzajú o úroveò nišie v prieèinku \lib.
+Include súbory sa nachádzajú taktie o úroveò nišie v prieèinku \include.
+
+príklad:
+gcc bind.c -I ..\include -L ..\lib -llua51 -lglew32 -lopengl32 -lglu32 -shared -o luaglew.dll
+
+Súbor luaglew.dll obsahuje dynamickú kninicu obsahujúcu funkcie GLEW pre jazyk Lua.
+V prípade testovania treba nakopírova tento súbor do prieèinku \luaglew_test, kde sa nachádzajú testovacie súbory.
+
+(V prostredí, kde funguje CodeBlocks IDE, mono poui vytvorenı projekt \src\bind.cbp)
+
+
+5. Prieèinok s programom vyuívajúcim kninicu LuaGLEW.dll, musí pbsahova okrem tejto kninice aj kninicu libglew.dll (presne s tımto názvom), èo je dynamická kninica GLEW (http://glew.sourceforge.net/install.html).
+Ïalej musí obsahova všetko, èo je potrebné pre pouívanie jazyka Lua (v tom istom prieèinku len lua51.dll ale Lua musí by nainštalovaná - inštrukcie http://www.lua.org/download.html)
+
+
+V prípade, e chıbajú funckie.
+V generátore preväzovacích kódov \src\luaglew_list_generator\luaglew_lists_generator.c sa od riadku 359 nachádzajú vylúèené funckie, ktoré sú síce definované v GLEW definíciách, ale kninica GLEW.dll ich neobsahuje. Ak teda chıba nejaká funkcia, tuto ju mono prida do kninice vymazaním niektorého riadku. Kninica GLEW ju však musí obsahova, inak sa program neskompiluje.
